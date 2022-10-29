@@ -1,0 +1,68 @@
+/* body */
+body{
+    margin: 0px;
+    background-image: url("../images/background.png");
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+/* p */
+p{
+    text-align: center;
+}
+.title{
+    font-size: 110px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.font-medium{
+    margin-top: 0px;
+    font-size: 40px;
+}
+.font-small{
+    font-size: 10px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin-top: 20px;
+}
+/* button */
+button{
+    background-color: rgb(44, 128, 104);
+    color: white;
+    border: 0px;
+}
+.get{
+    border-radius: 30px;
+    width: 300px;
+    height: 60px;
+    font-size: 25px;
+}
+.chat{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    bottom: 0px;
+    right: 15px;
+    font-size: 15px;
+}
+/* form */
+form{
+    margin-top: 20px;
+    margin-left: 1400px;
+}
+/* select */
+select{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    background: none;
+    border: none;
+}
+form::before{
+    position: absolute;
+    content: url("C:/Users/Acer/Desktop/landing/ExpressVPN/images/planet.png");
+    width: 5%;
+    top: 10px;
+    right: 130px;
+}

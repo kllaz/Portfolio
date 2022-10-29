@@ -1,0 +1,117 @@
+/* main */
+
+/* body */
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(22, 35, 35);
+    margin: 0px;
+}
+/* div */
+.head{
+    background-color: white;
+    position: relative;
+    height: 60px;
+    box-shadow: 3px 3px 2px lightgray;
+}
+.main{
+    background-image: url("../images/background.png");
+}
+/* ul, li */
+ul{
+    list-style: none;
+    position: relative;
+    float: left;
+    position: relative;
+    padding: 0px;
+    height: 44px;
+    margin-bottom: 0px;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+.logo{
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.header{
+    margin-left: 50px;
+}
+.header.first{
+
+    margin-left: 400px;
+}
+.header.last{
+    margin-right: 50px;
+}
+.header.button{
+    margin-right: -40px;
+}
+/* select */
+select{
+    border: 0px;
+    font-size: 20px;
+}
+/* button */
+button{
+    box-shadow: none;
+    border-radius: 6px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.login{
+    background-color: white;
+    border-color: magenta;
+    color: magenta;
+
+}
+.signup{
+    background-color: magenta;
+    border-color: white;
+    color: white;
+}
+.main button{
+    background-color:rgb(231 50 156);
+    color: white;
+    width: 300px;
+    height: 70px;
+    margin-left: 80px; 
+    font-size: 30px;  
+    border: 0px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+/* p */
+.main p{
+    color: rgb(55, 50, 65);
+}
+p{
+    margin: 0px;
+    margin-left: 80px;
+    padding-top: 200px;
+}
+.font-large{
+    font-size: 50px;
+    width: 700px;
+}
+.large{
+    font-size: 25px;
+    width: 600px;
+    word-spacing: 8px;
+    line-height: 35px;
+}
+.under{
+    padding-top: 0px;
+}
+.under.button{
+    padding-top: 5px;
+    color:rgb(172, 172, 172);
+    word-spacing: 13px;
+    padding-bottom: 187px;
+}

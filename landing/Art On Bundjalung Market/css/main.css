@@ -1,0 +1,144 @@
+/* body */
+body{
+    margin: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* div */
+.head{
+    background-image: url("../images/head-back.png");
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    padding-top: 20px;
+    height: 610px;
+}
+.welcome{
+    background-image: url("../images/welcome-back.png");
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+.past{
+    background-image: url("../images/past-back.png");
+    background-repeat: no-repeat;
+    color: white;
+}
+.video{
+    background-image: url("../images/video-back.png");
+    background-repeat: no-repeat;
+    color: white;
+    height: 640px;
+}
+.about{
+    background-image: url("../images/about-back.png");
+    background-repeat: no-repeat;
+    color: white;
+    height: 1156px;
+}
+.foot{
+    background-color: rgb(64, 64, 64);
+    color: white;
+    height: 50px;
+}
+.description{
+    text-align: left;
+    margin-left: 570px;
+    font-size: 14px;
+    padding-bottom: 170px;
+}
+
+/* p */
+/* .head */
+p.rotate{
+    transform: rotate(90deg);
+    top: 20px;
+    position:relative;
+    right: -1300px;
+    width: 200px;
+}
+.font-large{
+    font-size: 70px;
+}
+.head .font-large{
+    margin-top: 80px;
+    margin-left: 510px;
+}
+/* b */
+.color-white{
+    color: white;
+}
+/* .welcome */
+.greeting{
+    font-size: 40px;
+    padding-top: 120px;
+}
+.line-height{
+    line-height: 20px;
+    margin-top: 27px;
+}
+/* .past */
+.past p{
+    margin-left: 400px;
+    line-height: 25px;
+}
+.past .highest{
+    padding-top: 200px;
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 90px;
+}
+.past .lowest{
+    padding-bottom: 50px;
+}
+/* .video */
+.video p{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 500px;
+    padding-top: 230px;
+    font-size: 18px;
+}
+/* .about */
+.about p{
+    margin-left: 400px;
+}
+.about .highest{
+    padding-top: 250px;
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+/* .foot */
+.foot p{
+    margin: 0px;
+    margin-left: 593px;
+    padding-top: 16px;
+}
+/* ul,li */
+ul.rotate{
+    transform:rotate(90deg);
+    position:relative;
+    right: -580px;
+    top: -800px;
+    width:200px;
+    margin-right: 0px;
+    list-style-type: none;
+}
+li.left{
+    margin-top: 1380px;
+}
+/* a */
+.head a{
+    color: rgb(64, 64, 64);
+}
+/* button */
+button{
+    position: relative;
+    top: -1360px;
+    background-color: rgb(64, 64, 64);
+    color: white;
+    width: 200px;
+    height: 35px;
+    border-radius: 0px;
+    border: 0px;
+    margin-left: 495px;
+}

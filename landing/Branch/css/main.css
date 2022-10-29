@@ -1,0 +1,105 @@
+/* body */
+body{
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+}
+/* div */
+.head{
+    height: 70px;
+    margin-top: 10px;
+}
+.margin-left{
+    margin-left: 150px;
+}
+.information{
+    background-image: url("../images/background.jpg");
+}
+.branch-difference{
+    background-color: white;
+}
+.foot{
+    background-color: rgb(0,44,46);
+    color: white;
+}
+/* p */
+.information p{
+    padding-top: 100px;
+    font-size: 55px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.branch-difference p{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.foot p{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+/* ul, li */
+.head ul{
+    position: absolute;
+
+}
+.head ul li{
+    display: inline;
+    margin-right: 30px;
+    color: gray;
+    font-size: 20px;
+}
+li.first{
+    margin-left: 330px;
+    margin-right: 60px;
+}
+
+.margin-left li{
+    font-size: 20px;
+}
+.not-first{
+    line-height: 36px;
+}
+.button{
+    list-style: none;
+    margin-top: 10px;
+    margin-left: -19px;
+    padding-bottom: 100px;
+}
+/* button */
+.build-office{
+    background-color: rgb(0,44,46);
+    color: white;
+    height: 47px;
+    width: 280px;
+    font-size: 23px;
+}
+.head .build-office{
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+/* img */
+.head img{
+    position: absolute;
+    width: 14%;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+/* table */
+table{
+    border-spacing: 160px 10px;
+    padding-bottom: 50px;
+}
+/* td */
+td{
+    text-align: center;
+    border-spacing: 50px;
+}
+.normal{
+    color: gray;
+}
+/* img */
+img{width: 35%;}

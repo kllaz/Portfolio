@@ -1,0 +1,52 @@
+/* body */
+body{
+    margin: 0px;
+    color: rgb(25, 25, 25);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* div */
+.center{
+    text-align: center;
+}
+/* p */
+.important{
+    font-size: 40px;
+}
+.line-height{
+    line-height: 26px;
+    margin: 0px;
+}
+.margin-top{
+    margin-top:60px;
+}
+/* a */
+a{
+    color: rgb(197, 37, 93);
+    text-decoration: none;
+}
+/* input */
+input{
+    width: 400px;
+    height: 30px;
+    text-align: center;
+    border-radius: 7px;
+    border-color: rgb(153, 153, 153);
+}
+/* button */
+button{
+    margin-top: 20px;
+    background-color: rgb(197, 37, 93);
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+}
+/* ul, li */
+ul li{
+    display: inline;
+    margin-right: 290px;
+}
+.last{
+    margin-right: 0px;
+}

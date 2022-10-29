@@ -1,0 +1,129 @@
+*{
+    margin:0px;
+}
+body, p, section, aside, img{
+    display: block;
+}
+body{
+    background-color:bisque;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* div */
+.head{
+    width: 100%;
+    background-color: white;
+    font-size: 30px;
+}
+.margin-left{
+    margin-left: 100px;
+}
+.more-margin{
+    margin-left: 120px;
+}
+
+.main{
+    margin-left:150px;
+    margin-top: 30px;
+    font-size: 30px;
+    position: absolute;
+}
+.aside{
+    float: right;
+    background-color: orange;
+    width: 400px;
+    height:93vh;
+    margin-right: 100px;
+    color: white;
+}
+.text-aside{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+/* p */
+.logo{
+    position: absolute;
+}
+.font-small{
+    font-size: 10px;
+    letter-spacing: 9px;
+    padding-bottom: 5px;
+}
+.main p{
+    margin-top: 60px;
+}
+.font-smaller{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.main .font-small{
+    letter-spacing: normal;
+    margin-top: 0px;
+    font-size: 15px;
+    color: slategrey;
+    line-height: 2em;
+}
+.font-bigger{
+    font-size: 25px;
+}
+.form{
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-size: 23px;
+}
+/* main */
+.color-orange{
+    color: orange;
+}
+/* images */
+img{
+    margin-left: 280px;
+    width:43%;
+}
+/* input, select, textarea */
+input, select, textarea{
+    border-right: 0px;
+    border-top:0px;
+    border-left:0px;
+    width: 310px;
+    background-color: orange;
+    border-bottom-color: white ;
+    color: white;
+    height: 25px;
+    font-size: larger;
+}
+input:active{
+    border-right: 0px;
+    border-top:0px;
+    border-left:0px;
+}
+.submit{
+    border: 0px;
+    width: 200px;
+    height: 40px;
+    color: orange;
+    background-color: bisque;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-right: 50px;
+    float: right;
+}
+/* form */
+form{
+    margin-top: 30px;
+}
+/* option */
+option{
+    background-color: bisque;
+    color: slategrey;
+}
+/* textarea */
+textarea{
+    resize: none;
+    height: 80px;
+}
+textarea::placeholder{
+    color: white; 
+}
