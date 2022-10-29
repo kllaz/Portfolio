@@ -1,0 +1,169 @@
+p, body, img{display: block;}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    font-size: 20px;
+}
+/* header */
+header{
+    background-color: black;
+    height: 60px;
+}
+/* footer */
+footer{
+    background-color: black;
+    height: 60px;
+}
+/* img */
+img{
+    margin-left: auto;
+    margin-right: auto;
+}
+img.me{
+    margin-top: 1.5em;
+}
+img.portfolio{
+    margin-bottom: 1em;
+}
+/* p */
+p{margin-bottom: 0px;}
+p.signature{
+    margin-left: auto;
+    margin-right: auto;
+    color: gray;
+    font-size: 15px;
+    margin-top: 0.4em;
+}
+p.about{
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(217, 217, 217);
+    margin-top: 1em;
+    font-size: 19px;
+    line-height: 1.4em;
+    width: 50%;
+    margin-bottom: 2em;
+}
+p#contacts{
+    margin-bottom: 1.5em;
+}
+
+/* span */
+span{
+    margin-left: 1em;
+    font-size: 20px;
+}
+span.contacts{
+    margin-left: 1.3em;
+}
+/* a */
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+a.portfolio{
+    font-size: 20px;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+a.contacts{
+    margin-top: 16px;
+}
+/* div */
+div.frame{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border: 2px solid white;
+    color: white;
+    width: 800px;
+    height: 60px;
+    margin-bottom: 1em;
+}
+/* footer */
+
+
+
+
+
+
+/* slideshow */
+.dots{
+    text-align: center;
+}
+.slideshow-container{
+    width: 725.4px;
+    position: relative;
+    height: 359.288px;
+    margin:auto;
+}
+.mySlides{
+    display: none;
+}
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.slidetext{
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    top: 30%;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    color: black;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
