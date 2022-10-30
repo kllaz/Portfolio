@@ -103,3 +103,10 @@ td{
 }
 /* img */
 img{width: 35%;}
+/* a */
+a{
+    text-decoration: none;
+}
+.head a{
+    color: gray;
+}
