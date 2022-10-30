@@ -46,7 +46,7 @@ p.about{
     margin-top: 1em;
     font-size: 19px;
     line-height: 1.4em;
-    width: 50%;
+    width: 48%;
     margin-bottom: 2em;
 }
 p#contacts{
@@ -82,7 +82,7 @@ div.frame{
     text-align: left;
     border: 2px solid white;
     color: white;
-    width: 800px;
+    width: 60%;
     height: 60px;
     margin-bottom: 1em;
 }
