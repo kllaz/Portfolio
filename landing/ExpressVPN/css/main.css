@@ -61,7 +61,7 @@ select{
 }
 form::before{
     position: absolute;
-    content: url("C:/Users/Acer/Desktop/landing/ExpressVPN/images/planet.png");
+    content: url("../images/planet.png");
     width: 5%;
     top: 10px;
     right: 130px;
