@@ -140,7 +140,7 @@ div.frame{
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: 1.1px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.493);
 }
