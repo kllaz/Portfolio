@@ -107,11 +107,12 @@ div.frame{
 }
 .numbertext {
     color: white;
-    font-size: 12px;
+    font-size: 70%;
     padding: 8px 12px;
     position: absolute;
     top: 0;
     background-color: rgba(0, 0, 0, 0.493);
+    width: 4%;
 }
 .fade{
     -webkit-animation-name: fade;
