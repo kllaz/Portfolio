@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Nature.Co</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div class="head">
+    <header>
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <p class="logo-p">Logo</p>
+        <div class="margin-left">
+            <p class="name">NATURE.CO</p>
+            <div class="links frame">
+                <nav class="navigation">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">BOOKING</a>
+                    <a href="#">LOG IN</a>
+                    <a href="#">SIGN IN</a>
+                    <a href="#">I'M A GUEST</a>
+                </nav>
+            </div>
+            <p class="font-large">We are about to make you feel<br/>happier! :)</p>
+        </div>
+        
+        <form action="action_page.php">
+            <div class="sign-in frame">
+                <p class="sign">Sign In</p>
+                
+                <div class="action-margin">
+                    <label for="username" class="signature">Username*</label><br/>
+                    <input class="input-margin-bottom" type="text" placeholder="Username" name="Username" required/>
+
+                    <label for="name" class="signature">Name*</label><br/>
+                    <input class="input-margin-bottom" type="text" placeholder="Name" name="Name" required/>
+
+                    <label for="email" class="signature">Email*</label><br/>
+                    <input class="input-margin-bottom" type="email" placeholder="Email" name="Email" required/>
+
+                    <label for="password" class="signature">Password*</label><br/>
+                    <input class="input-margin-bottom-last" type="password" placeholder="Password" name="password" required/>
+
+                    <label>
+                        <input type="checkbox"/>
+                        <span class="agreement">Agreement</span>
+                    </label><br/>
+                    
+                    <button class="frame sign-in-button">
+                        <p>SIGN IN</p>
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <div class="social-media">
+            <ul>
+                <li><a href="#4"><img class="links" src="images/insta.png" alt="insta" /></a></li>
+                <li class="img-links-margin"><a href="#1"><img class="links" src="images/fb.png" alt="facebook" /></a></li>
+                <li class="img-links-margin"><a href="#2"><img class="links" src="images/telegram.png" alt="telegram" /></a></li>
+                <li class="img-links-margin"><a href="#3"><img class="links" src="images/yt.png" alt="youtube" /></a></li>
+            </ul>
+        </div>
+    </header>
+    </div>
+
+    <div class="question">
+        <p>Why Should You Choose US</p>
+    </div>
+
+    <div class="reasons">
+    </div>
+    <div class="contact">
+        <div class="padding">
+            <p> Contact Us </p>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/slide-1.png" class="img-slides">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/slide-2.png" class="img-slides">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/slide-3.png" class="img-slides">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+    <script src="js/slideshow.js"></script>
+    </div>
+
+    <footer>
+        <img src="images/logo.png" alt="logo" style="margin-top: 3px; position: absolute;"/>
+        <ul>
+            <li>Nature.co,</li>
+            <li>2022</li>
+            <li class="first-little-dot"><a href="#"><img src="images/little-dot.png" alt="little-dot" /></a></li>
+            <li class="little-dots"><a href="#"><img src="images/little-dot.png" alt="little-dot" /></a></li>
+            <li class="little-dots"><a href="#"><img src="images/little-dot.png" alt="little-dot" /></a></li>
+            <li class="little-dots"><a href="#"><img src="images/little-dot.png" alt="little-dot" /></a></li>
+            <li class="little-dots"><a href="#"><img src="images/little-dot.png" alt="little-dot" /></a></li>
+            <li class="little-dots"><a href="#"><img src="images/little-dot.png" alt="little-dot" /></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
