@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    width: 100%;
+    background-color: wheat;
+}
+/* a, select */
+select{
+    border: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-color: wheat;
+    font-weight: bold;
+    font-size: 20px;
+}
+select::-ms-expand {
+    display: none;    
+}
+a.black-colored-link{
+    color: black;
+    text-decoration: none;
+}
+a.log-in{
+    color: blue;
+    margin-left: 300px;
+    text-decoration: none;
+}
+/* img */
+img{
+    margin-left: 7% !important;
+    margin-top: 15px;
+    position: absolute;
+}
+img.main-image{
+    margin-top: 100px;
+}
+/* .margrin-left */
+.margin-left{
+    margin-left: 1%;
+}
+/* p, form */
+form p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* input */
+input.text-input{
+    width: 600px;
+    font-size: 30px;
+    height: 50px;
+    border-radius: 5px;
+    border-color: lightgray;
+}
+input.second{
+    margin-bottom: 20px;
+}
+input.sign-up{
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(68, 0, 255);
+    color: white;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+}
+/* div */
+div.links{
+    margin-left: -45px;
+}
+/* tr td */
