@@ -10,6 +10,7 @@ body{
 header{
   height: 50px;
   background-color: white;
+  padding-top: 15px;
 }
 /* img */
 header img{
