@@ -85,9 +85,6 @@ a.portfolio{
 }
 a.contacts{
     margin-top: 16px;
-}
-/* div */
-div.frame{
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -96,12 +93,8 @@ div.frame{
     width: 60%;
     height: 60px;
     margin-bottom: 1em;
+    line-height: 60px;
 }
-/* footer */
-
-
-
-
 
 
 /* slideshow */
