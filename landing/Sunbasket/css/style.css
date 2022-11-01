@@ -13,3 +13,8 @@ header{
 header img{
   position: absolute;
 }
+/* a */
+a{
+  text-decoration: none;
+  color: black;
+}
