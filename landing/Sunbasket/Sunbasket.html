@@ -27,10 +27,10 @@
     <header>
        <img src="images/logo.png" alt="log" width="280px" />
         <div class="links">
-            <a href="#">Register</a>
-            <a href="#">Set Up</a>
-            <a href="#">Customize</a>
-            <a href="#">Pay</a>
+             <a onmouseover="changeSecondItem(); changeThirdItem(); changeFourthItem()" onmouseout="rechangeSecondItem(); rechangeThirdItem(); rechangeFourthItem()" id="border-bottom-first" href="#">Register</a>
+             <a onmouseover="changeFirstItem(); changeThirdItem(); changeFourthItem()" onmouseout="rechangeFirstItem(); rechangeThirdItem(); rechangeFourthItem()" id="border-bottom-second" href="#">Set Up</a>
+             <a onmouseover="changeFirstItem(); changeSecondItem(); changeFourthItem()" onmouseout="rechangeFirstItem(); rechangeSecondItem(); rechangeFourthItem()" id="border-bottom-third" href="#">Customize</a>
+             <a onmouseover="changeFirstItem(); changeSecondItem(); changeThirdItem();" onmouseout="rechangeFirstItem(); rechangeSecondItem(); rechangeThirdItem();" id="border-bottom-fourth" href="#">Pay</a>
         </div>
     </header>
     <div style="text-align: center">
