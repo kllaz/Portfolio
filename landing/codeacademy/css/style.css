@@ -35,6 +35,11 @@ img{
 }
 img.main-image{
     margin-top: 100px;
+    
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
 }
 /* .margrin-left */
 .margin-left{
