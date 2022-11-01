@@ -25,6 +25,11 @@ img{
 }
 img.me{
     margin-top: 1.5em;
+        
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
 }
 img.portfolio{
     margin-bottom: 1em;
