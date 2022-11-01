@@ -24,15 +24,14 @@ a{
   font-size: 2em;
   float: right;
   margin-right: 2%;
+  height: 45px;
+  border-bottom: 5px solid black;
+
 
   -webkit-transition: 0.1s linear;
   -moz-transition: 0.1s linear;
   -o-transition: 0.1s linear;
   transition: 0.1s linear;
-}
-header a:hover{
-    border-bottom: 5px solid black;
-    height: 45px;
 }
 /* div */
 div.links{
