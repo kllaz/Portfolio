@@ -75,3 +75,25 @@ form::before{
     top: 10px;
     right: 130px;
 }
+/* option */
+option{
+    border: none;
+    background-color: rgb(239, 222, 184);
+}
+select:hover{
+    background-color: rgb(239, 222, 184);
+}
+/* img */
+img.moonland{
+    position: absolute;
+    z-index: -1;
+    width: 96%;
+    left: 0px;
+    bottom: 0px;
+    left: 1.5%;
+
+    transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+}
