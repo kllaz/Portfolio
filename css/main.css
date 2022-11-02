@@ -103,11 +103,8 @@ a.contacts{
 
 
 /* slideshow */
-.dots{
-    text-align: center;
-}
 .slideshow-container{
-    width: 60%;
+    width:60%;
     position: relative;
     margin:auto;
 }
@@ -122,6 +119,7 @@ a.contacts{
     top: 0;
     background-color: rgba(0, 0, 0, 0.493);
     width: auto;
+    border-radius: 0 0 3px 0;
 }
 .fade{
     -webkit-animation-name: fade;
@@ -139,7 +137,8 @@ a.contacts{
     to {opacity: 1}
 }
 .slidetext{
-    color: black;
+    color: white;
+    border-radius: 0 3px 0 0;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -147,9 +146,6 @@ a.contacts{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.493);
 }
-.active, .dot:hover {
-    background-color: #717171;
-}  
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -161,6 +157,14 @@ a.contacts{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     color: black;
+
+    transition: 0.3s linear ;
+    -o-transition: 0.3s linear ;
+    -webkit-transition: 0.3s linear ;
+    -moz-transition: 0.3s linear ;
+}
+a.prev:hover, a.next:hover{
+    color: white;
 }
 .next {
     right: 0;
