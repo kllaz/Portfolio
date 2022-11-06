@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uber</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body style="margin: 0px">
+    <header>
+        <div class="inline-container">
+            <span class="logo">Uber</span>
+            <span class="action-container">
+                <form action="#">
+                <select name="language" id="languageChange" onchange="window.location.href=this.options[this.selectedIndex].value">
+                    <option value="English" hidden style="margin-left: 10px">En</option>
+                    <option value="indexen.html">English</option>
+                    <option value="indexru.html">Russian</option>
+                    <option value="indexde.html">German</option>
+                </select>
+                </form>
+                <button>Ride with Uber</button>
+            </span>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="signature">
+            <p class="font-huge">Drive when you<br/>want, make what<br/>you need</p>
+            <p>Signup and earn on your terms</p>
+        </div>
+        <div class="login-container">
+            <div class="center">
+                <p class="signup">Sign up now</p>
+                <div class="about-car">
+                    <input type="radio" id="have" name="have or need" value="have" checked>
+                    <label class="label-have" for="have">I have a car</label>
+                    <input type="radio" id="need" name="have or need" value="need">
+                    <label for="need">I need a car</label><br/>
+                </div>
+                <input type="text" name="firstname" id="firstName" placeholder="First name">
+                <input type="text" name="lastname" id="lastName" placeholder="Last name"><br/>
+                <input type="email" name="email" id="email" placeholder="Email"><br/>
+                <input type="password" name="password" id="password" placeholder="Password"><br/>
+                <input type="tel" name="phonenumber" id="phoneNumber" placeholder="Phone number"><br/>
+                <p class="agreement">By proceeding, I agree to Uber's <a href="#">Terms of Use</a> and acknowledge that I have read<br/>
+                    the <a href="#">Privacy Notice</a>.</p>
+                <p class="agreement agreement-bottom">By proceeding, I am also consenting to receive calls or SMS messages, including<br/>
+                    by automatic dialer, from Uber and its affillates to the number I provide. I<br/>
+                    understand that I may opt out by texting "STOP" to 89203.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>

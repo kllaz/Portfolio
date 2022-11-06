@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uber</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body style="margin: 0px">
+    <header>
+        <div class="inline-container">
+            <span class="logo">Uber</span>
+            <span class="action-container">
+                <form action="#">
+                <select name="language" id="languageChange" class="russian" onchange="window.location.href=this.options[this.selectedIndex].value">
+                    <option value="Russian" hidden style="margin-left: 10px">Ru</option>
+                    <option value="indexru.html">Русский</option>
+                    <option value="indexde.html">Немецкий</option>
+                    <option value="indexen.html">Английский</option>
+                </select>
+                </form>
+                <button>Вызвать убер</button>
+            </span>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="signature">
+            <p class="font-huge">Катайся, когда<br/>хочешь, делай то,<br/>что тебе надо</p>
+            <p>Зарегистрируйся и зарабатывай на своих условиях</p>
+        </div>
+        <div class="login-container">
+            <div class="center">
+                <p class="signup">Зарегистрироваться</p>
+                <div class="about-car">
+                    <input type="radio" id="have" name="have or need" value="have" checked>
+                    <label class="label-have" for="have">У меня есть машина</label>
+                    <input type="radio" id="need" name="have or need" value="need">
+                    <label for="need">Мне нужна машина</label><br/>
+                </div>
+                <input type="text" name="firstname" id="firstName" placeholder="Имя">
+                <input type="text" name="lastname" id="lastName" placeholder="Фамилия"><br/>
+                <input type="email" name="email" id="email" placeholder="Email"><br/>
+                <input type="password" name="password" id="password" placeholder="Пароль"><br/>
+                <input type="tel" name="phonenumber" id="phoneNumber" placeholder="Номер телефона"><br/>
+                <p class="agreement">Продолжая, я соглашаюсь с<a href="#">Условиями пользования</a> убером и подтверждаю, что<br/>
+                    прочитал/а<a href="#">Уведомление о конфиденциальности</a>.</p>
+                <p class="agreement agreement-bottom">Продолжая, я также соглашаюсь принимать автоматический звонки или СМС или<br/>
+                    звонки и СМС от Убера и его аффилированных лиц на номер, который я предоставляю. Я<br/>
+                    понимаю, что могу отказаться, написав "STOP" на номер 89203.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>

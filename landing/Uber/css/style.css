@@ -1,0 +1,197 @@
+body{
+    background-color: black;
+    max-width: 100%;
+    width: 100%;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* header */
+header{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+/* div */
+div.inline-container{
+    margin-top: 10px;
+    margin-left: 60px;
+    display: flex;
+}
+div.main-container{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+}
+div.login-container{
+    background-color: white;
+    color: black;
+    position: absolute;
+    right: 10%;
+    height: max-content;
+    width: 700px;
+}
+div.center{
+    margin-left: 35px;
+}
+div.about-car{
+    margin-bottom: 30px;
+}
+div.signature{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+/* input */
+input#have {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(209, 209, 209);
+    outline: none;
+
+    transition: 0.2s all linear;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input#have:checked {
+    border: 6px solid black;
+}
+input#need {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(209, 209, 209);
+    outline: none;
+
+    transition: 0.2s all linear;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input#need:checked {
+    border: 6px solid black;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"]{
+    border: none;
+    background-color: rgb(220, 220, 220);
+    height: 50px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+input[type="text"]{
+    width: 45.25%;
+    margin-right: 20px;
+}
+input[type="email"], input[type="password"], input[type="tel"]{
+    width: 95%;
+}
+input::placeholder{
+    padding-left: 15px;
+}
+/* label */
+label.label-have{
+    margin-right: 20px;
+}
+/* p */
+p.agreement{
+    color: gray;
+}
+p.signup{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+p.font-huge{
+    font-size: 50px;
+}
+p.agreement-bottom{
+    margin-bottom: 40px;
+}
+/* span */
+span.logo{
+    font-size: 25px;
+    margin: 0px;
+}
+span.action-container{
+    position: absolute;
+    right: 80px;
+    display: flex;
+}
+/* button */
+span.action-container button{
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    height: 40px;
+    width: 180px;
+    font-size: 18px;
+    margin-left: -10px;
+    font-weight: bold;
+
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+span.action-container button:hover{
+    background-color: rgb(209, 209, 209);
+}
+/* select */
+select#languageChange{
+    background-color: black;
+    border: none;
+    font-size: 18px;
+    color: white;
+    outline: none;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+    box-shadow: none;
+}
+select#languageChange option{
+    border: 5px solid black;
+    color: black;
+    background-color: white;
+    outline: none;
+    box-shadow: none;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+select#languageChange{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-top: 10px;
+}
+select#languageChange::-ms-expand {
+	display: none;
+}
+select.russian{
+    margin-right: -30px;
+}
+select.deutsch{
+    margin-right: -5px;
+}
+/* form */
+form::before{
+    position: absolute;
+    content: url("../images/world.png");
+    width: 20px !important;
+    top: -7px;
+    right: 300px;
+}
+/* scrollbar */
+::-webkit-scrollbar{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
