@@ -304,3 +304,12 @@ footer{
     height: 56px;
     background-color: #1B1B1B;
 }
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: none;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(30, 30, 35, 0.8);
+    border-radius: 35px;
+}
