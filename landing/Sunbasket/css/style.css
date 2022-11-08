@@ -55,6 +55,7 @@ input.button{
   color:black;
   border-radius: 25px;
   border: none;
+  margin-bottom: 0px;
 }
 input.button:hover{
     background-color: rgb(211, 211, 1);
