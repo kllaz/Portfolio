@@ -172,3 +172,11 @@ a.prev:hover, a.next:hover{
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: none;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+}
