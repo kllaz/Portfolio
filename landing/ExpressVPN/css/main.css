@@ -2,11 +2,11 @@
 body{
     margin: 0px;
     background-image: url("../images/background.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: black;
     font-family:'Times New Roman', Times, serif;
     text-align: center;
-    background-color: #eaddb8;
-    background-repeat:no-repeat
 }
 /* p */
 p{
@@ -38,6 +38,7 @@ button.get{
     width: 300px;
     height: 60px;
     font-size: 25px;
+
     transition: 0.3s linear;
     -moz-transition: 0.3s linear;
     -webkit-transition: 0.3s linear;
@@ -48,7 +49,7 @@ button.get:hover{
     width: 320px;
     height: 65px;
 }
-.chat{
+button.chat{
     position: absolute;
     width: 200px;
     height: 40px;
@@ -69,6 +70,8 @@ select{
     font-size: 15px;
     background: none;
     border: none;
+    box-shadow: none;
+    filter: none;
 }
 form::before{
     position: absolute;
