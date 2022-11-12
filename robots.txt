@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+Host: https://klaz.by
+Sitemap: https://kllaz.github.io/Portfolio/sitemap.xml
