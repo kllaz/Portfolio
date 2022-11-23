@@ -1,4 +1,4 @@
-@media only handheld {
+@media handheld {
     body{
         margin: 0px;
         background-color: red;
