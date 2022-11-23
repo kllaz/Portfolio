@@ -1,7 +1,7 @@
 @media handheld {
     body{
         margin: 0px;
-        background-color: red;
+        background-color: red !important;
     }
     
 }
