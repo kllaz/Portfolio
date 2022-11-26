@@ -102,3 +102,44 @@ img.moonland{
     -webkit-transition: 0.3s linear;
     -o-transition: 0.3s linear;
 }
+/* meida */
+@media screen and (max-width: 1000px) {
+    .title{
+        font-size: 90px !important;
+    }
+    form{
+        width: 100px !important;
+        height: 30px !important;
+        font-size: 15px;
+        background: none;
+        border: none;
+        box-shadow: none;
+        filter: none;
+        margin-left: 75%;
+    }
+    form::before{
+        display: flex;
+        content: url("../images/planet.png");
+        width: 5%;
+        margin-right: 45%;
+        margin-top: -10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .title{
+        font-size: 40px !important;
+        margin-top: 100px !important;
+    }
+    .font-medium{
+        font-size: 20px !important;
+        margin-top: 20px;
+    }
+    form{
+        margin-left: 65%;
+    }
+}
+@media screen and (max-width: 350px){
+    form{
+        margin-left: 50%;
+    }
+}
