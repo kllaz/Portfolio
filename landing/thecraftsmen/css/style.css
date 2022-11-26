@@ -259,6 +259,11 @@ span.animation-text{
     font-size: 60px;
     font-weight: bold;
     display: inline-block;
+    z-index: 6;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
 }
 a.white-box span.bottom{
     margin-top: 60px ;
@@ -269,7 +274,50 @@ a.black-box span.bottom{
 a.yellow-box span.bottom{
     margin-top: 30px;
 }
+/* img */
+img.figure{
+    width: 70px;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.6;
 
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+img#circle{
+    left: 60px;
+    animation: moving 8s infinite linear reverse;
+    transform-origin: center;
+}
+img#rectangle{
+    top: 100px;
+    animation: moving 8s infinite linear reverse;
+    transform-origin: center;
+}
+img#triangle{
+    width: 80px;
+    top: 104px;
+    left: 130px;
+
+    animation: moving 8s infinite linear reverse;
+    transform-origin: center;
+    z-index: -200;
+}
+div.rotation{
+    position: absolute;
+    margin-top: 8.5%;
+    margin-left: 14%;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+div.rec-rot, .tr-rot, .cir-rot{
+    animation: moving 7s infinite linear reverse;
+    transform-origin: 100px 100px;
+}
 /* class "animation" */
 .animation{
     -webkit-transition: 0.3s ease-in-out;
@@ -278,6 +326,9 @@ a.yellow-box span.bottom{
     transition: 0.3s ease-in-out;
 }
 /* keyframes */
+@keyframes moving {
+    100% {transform: rotate(-360deg);}
+}
 @keyframes slide{
     from {
         font-size: 60px;
