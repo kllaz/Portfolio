@@ -1,193 +1,68 @@
-body{
-  background-image: url("../images/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  max-width: 100%;
-  width: 100%;
-  color:black
-}
-/* header */
-header{
-  height: 50px;
-  background-color: white;
-  padding-top: 5px;
-}
-/* img */
-header img{
-  position: absolute;
-}
-/* a */
-header a{
-  text-decoration: none;
-  color: black;
-  font-size: 2em;
-  float: right;
-  margin-right: 2%;
-  height: 45px;
-  border-bottom: 5px solid black;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sunbasket</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '572530524873163');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=572530524873163&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body style="margin: 0px">
+    <header>
+        <img src="images/logo.png" alt="log" width="280px" />
+        <div class="links">
+            <input type="button" id="open" class="open" value="● ● ●">
+             <a onmouseover="changeSecondItem(); changeThirdItem(); changeFourthItem()" onmouseout="rechangeSecondItem(); rechangeThirdItem(); rechangeFourthItem()" id="border-bottom-first" href="#">Register</a>
+             <a onmouseover="changeFirstItem(); changeThirdItem(); changeFourthItem()" onmouseout="rechangeFirstItem(); rechangeThirdItem(); rechangeFourthItem()" id="border-bottom-second" href="#">Set Up</a>
+             <a onmouseover="changeFirstItem(); changeSecondItem(); changeFourthItem()" onmouseout="rechangeFirstItem(); rechangeSecondItem(); rechangeFourthItem()" id="border-bottom-third" href="#">Customize</a>
+             <a onmouseover="changeFirstItem(); changeSecondItem(); changeThirdItem()" onmouseout="rechangeFirstItem(); rechangeSecondItem(); rechangeThirdItem()" id="border-bottom-fourth" href="#">Pay</a>
+        </div>
+        <script src="js/border-bottom.js"></script>
+    </header>
 
+    <div class="aside" id="aside">
+        <div class="aside-content">
+            <input type="button" class="close" type="clode" id="close" value="×">
+            <p style="margin-top: 6px; margin-bottom: 6px; display: flex;"><b>Subasket</b></p>
+            <hr style="margin-top: 0px">
+            <div class="aside-links">
+                <a href="#">Register</a>
+                <hr>
+                <a href="#">Set</a>
+                <hr>
+                <a href="#">Customize</a>
+                <hr>
+                <a href="#">Pay</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/leftSide.js"></script>
 
-  -webkit-transition: 0.1s linear;
-  -moz-transition: 0.1s linear;
-  -o-transition: 0.1s linear;
-  transition: 0.1s linear;
-}
-/* div */
-div.links{
-    margin-right: 5%;
-}
-div.aside{
-  visibility: hidden;
-  opacity: 0;
-  margin-left: -100%;
-  -webkit-transition: 0.3s linear;
-  -moz-transition: 0.3s linear;
-  -o-transition: 0.3s linear;
-  transition: 0.3s linear;
-  width: 0px;
-  margin: -58px;
-  background-color: white;
-  height: 100%;
-  z-index: 2 !important;
-  position: absolute;
-}
-div.aside-content{
-  margin-left: 70px;
-  text-decoration: none !important;
-  color: black;
-  font-size: 40px;
-}
-div.aside-content a{
-  text-decoration: none;
-  color: black;
-}
-/*hr */
-div.aside hr{
-  margin-left: -70px;
-}
-/* p */
-p{
-  margin-bottom: 20px;
-}
-/* input */
-input{
-  width:47%;
-  font-size: 25px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  height: 50px;
-  border-color: lightgray;
-}
-input.button{
-  background-color: yellow;
-  color:black;
-  border-radius: 25px;
-  border: none;
-  margin-bottom: 0px;
-}
-input.button:hover{
-  background-color: rgb(211, 211, 1);
-}
-input.button:active{
-  background-color: rgb(189, 189, 0);
-  border-top: 2px solid rgb(54, 54, 54);
-  border-left: 2px solid rgb(54, 54, 54);
-}
-input.close{
-  float: right;
-  margin-right: 10px;
-  width: 30px !important;
-  height: max-content;
-  border: none;
-  text-decoration: none;
-  border-radius: 0px;
-  background: url(images/cross.png);
-  outline:none;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-/* media */
-@media screen and (min-width: 1000px) {
-  input.open{
-    width: 0px;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1;
-  }
-}
-@media screen and (max-width: 1000px) {
-  div.links a{
-    visibility: hidden !important;
-    opacity: 0;
-    width: 0px;
-    margin: 0px;
-  }
-  input{
-    width: 70% !important;
-  }
-  header img{
-    float: right !important;
-    position:relative;
-    width: 240px;
-    margin-top: 5px;
-    z-index: 1;
-  }
-  input.open{
-    background: url(images/lines.png);
-    width: 50px !important;
-    height: 50px;
-    border-radius: 0px;
-    margin-top: -2px;
-    margin-left: 4%;
-    font-size: 15px;
-    border: none;
-
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.5s ease-in-out;
-  }
-  input.open:hover {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-  div.aside{
-  width: 80%;
-  }
-  div.aside{
-    height: 100%;
-  }
-}
-@media screen and (max-width: 500px) {
-  header img{
-    width: 200px;
-    margin-top: 9px;
-  }
-  div.aside{
-    width: 112%;
-    background-color: white;
-  }
-  input.close{
-    margin-right: 20px;
-  }
-  div.aside{
-    height: 100.4%;
-  }
-  div.main-div p.top{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 30px !important;
-    margin-top: 20px !important;
-  }
-  input{
-    width: 90% !important;
-  }
-  p.underneath{
-    margin-top: 10px !important;
-    font-size: 25px !important;
-  }
-}
+    <div class="main-div" style="text-align: center;">
+        <p style="font-size: 50px; margin-top: 0px; margin-bottom: 0px;" id="top" class="top"><b>Start your flavour<br/>adventure</b></p>
+        <p style="font-size: 30px; margin-top: 10px;" class="underneath">Get $90 Off +4 Free Gifts. Includes Free<br/> Shopping</p>
+        <input class="text-input" type="text" name="First-name" placeholder="First name" required="required" /><br/>
+        <input class="text-input" type="text" name="Last-name" placeholder="Last name" /><br/>
+        <input class="text-input" type="text" name="Zip-code" placeholder="Zip code" required="required" /><br/>
+        <input class="text-input" type="email" name="Email" placeholder="Email address" required="required" /><br/>
+        <input class="text-input" type="password" name="Password" placeholder="Choose a password" required="required" /><br/>
+        <input class="button" type="submit" name="Submit" value="Seize Your Eat-ortunity" required="required" /><br/>
+    </div>
+</body>
+</html>
