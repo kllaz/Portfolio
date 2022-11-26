@@ -391,19 +391,22 @@ a.yellow-box span.bottom{
         line-height: 40.5px !important;
     }
     .left{
-        height: 450px !important;
+        height: 500px !important;
     }
     .right{
-        height: 450px !important;
+        height: 500px !important;
     }
-    #firstdescription{
-        margin-top: 130px;
+    #firstLeft{
+        width: 470px !important;
+    }
+    #firstRight{
+        width: 470px !important;
     }
     #secondLeft{
-        height: 400px !important;
+        height: 430px !important;
     }
     #secondRight{
-        height: 400px !important;
+        height: 430px !important;
     }
     #thirdLeft{
         height: 460px !important;
