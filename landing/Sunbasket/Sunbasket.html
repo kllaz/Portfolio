@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Sunbasket</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '572530524873163');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=572530524873163&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body style="margin: 0px">
     <header>
-       <img src="images/logo.png" alt="log" width="280px" />
+        <img src="images/logo.png" alt="log" width="280px" />
         <div class="links">
+            <input type="button" id="open" class="open" value="● ● ●">
              <a onmouseover="changeSecondItem(); changeThirdItem(); changeFourthItem()" onmouseout="rechangeSecondItem(); rechangeThirdItem(); rechangeFourthItem()" id="border-bottom-first" href="#">Register</a>
              <a onmouseover="changeFirstItem(); changeThirdItem(); changeFourthItem()" onmouseout="rechangeFirstItem(); rechangeThirdItem(); rechangeFourthItem()" id="border-bottom-second" href="#">Set Up</a>
              <a onmouseover="changeFirstItem(); changeSecondItem(); changeFourthItem()" onmouseout="rechangeFirstItem(); rechangeSecondItem(); rechangeFourthItem()" id="border-bottom-third" href="#">Customize</a>
@@ -17,9 +35,28 @@
         </div>
         <script src="js/border-bottom.js"></script>
     </header>
-    <div style="text-align: center">
-        <p style="font-size: 50px; margin-top: 22px"><b>Start your flavour<br/>adventure</b></p>
-        <p style="font-size: 30px">Get $90 Off +4 Free Gifts. Includes Free<br/> Shopping</p>
+
+    <div class="aside" id="aside">
+        <div class="aside-content">
+            <input type="button" class="close" type="clode" id="close" value="×">
+            <p style="margin-top: 6px; margin-bottom: 6px; display: flex;"><b>Subasket</b></p>
+            <hr style="margin-top: 0px">
+            <div class="aside-links">
+                <a href="#">Register</a>
+                <hr>
+                <a href="#">Set</a>
+                <hr>
+                <a href="#">Customize</a>
+                <hr>
+                <a href="#">Pay</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/leftSide.js"></script>
+
+    <div style="text-align: center;">
+        <p style="font-size: 50px; margin-top: 0px; margin-bottom: 0px;" id="top"><b>Start your flavour<br/>adventure</b></p>
+        <p style="font-size: 30px; margin-top: 10px;">Get $90 Off +4 Free Gifts. Includes Free<br/> Shopping</p>
         <input class="text-input" type="text" name="First-name" placeholder="First name" required="required" /><br/>
         <input class="text-input" type="text" name="Last-name" placeholder="Last name" /><br/>
         <input class="text-input" type="text" name="Zip-code" placeholder="Zip code" required="required" /><br/>
