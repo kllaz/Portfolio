@@ -61,7 +61,15 @@ button.chat{
 /* form */
 form{
     margin-top: 20px;
-    margin-left: 1400px;
+    margin-left: 85%;
+    display: flex;
+}
+form::before{
+    display: flex;
+    content: url("../images/planet.png");
+    width: 5%;
+    margin-right: 25%;
+    margin-top: -10px;
 }
 /* select */
 select{
@@ -72,13 +80,6 @@ select{
     border: none;
     box-shadow: none;
     filter: none;
-}
-form::before{
-    position: absolute;
-    content: url("../images/planet.png");
-    width: 5%;
-    top: 10px;
-    right: 130px;
 }
 /* option */
 option{
