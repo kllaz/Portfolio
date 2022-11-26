@@ -247,7 +247,9 @@ span.bottom{
     font-weight: bold;
     display: flex;
 }
-
+span.bottom.yellow{
+    margin-top: 35px !important;
+}
 span.arrow{
     margin-left: 555px;
     margin-top: -20px;
