@@ -1,116 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html style="scroll-behavior: smooth;">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="google-site-verification" content="j0YZqX3_Vu8BuP42LizHUOFWwpDviufxiXiBNI5pjqM" />
-    <meta name="google-site-verification" content="AKSde8Kfs8qyXZyJb-mkC5WysEPI8ZosrWNSHc-k_9g" />
-    <title>K_Laz</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Craftsmen</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="import" href="monitoring.html" />
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '572530524873163');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=572530524873163&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body style="margin: 0px">
-    <img src="images/ME.png" alt="yo this is me :D" class="me" id="image-of-K_Laz" width="100px" onmouseover="biggerImage()" onmouseout="smallerImage()"/>
-    <script src="js/biggerImage.js"></script>
-    <p><b>Покало Константин</b></p>
-    <p class="signature">Фронтенд-разработчик</p>
-    <p class="about">Минск, Беларусь. Являюсь начинающим фронтенд-разработчиком, пишу на HTML, CSS и JS(JavaScript)</p>
+    <p class="logo"><span>THE</span><br/>Craftsmen</p>
+<header style="width: 100%;">
+    <div class="main-container">
+        <div class="flex">
+            <a href="#whatwedo" id="mainBox" class="box main-box animation">
+                <span class="box-name">Craft CMS</span>
+                <div style="margin-top: 60px; width: 2000px;" id="mainBoxTextAnimation" class="box-animation">
+                    <span class="animation-text">We are specialized in Craft CMS.</span>
+                </div>
+                <span class="bottom blue">See our services</span>
+                <span class="bottom blue arrow">↓</span>
+            </a>
 
-    <a href="#contacts" class="contacts"><span class="contacts"><b>Контакты</b></span><span class="arrow">↓</span></a>
-    <p class="portfolio"><b>Портфолио</b></a>
-    <div class="slideshow-container" id="container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 12</div>
-          <a href="landing/thecraftsmen/index.html"><img src="images/thecraftsmen.png" class="img-slides" width="100%"></a>
-          <div class="slidetext">thecraftsmen</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 12</div>
-          <a href="landing/codeacademy/codeacademy.html"><img src="images/codecademy.png" class="img-slides" width="100%"></a>
-          <div class="slidetext">Codecademy</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 12</div>
-          <a href="landing/ExpressVPN/ExpressVPNen.html"><img src="images/ExpressVPN.png" class="img-slides" width="100%"></a>
-          <div class="slidetext">ExpressVPN</div>
-        </div>
-        
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 12</div>
-            <a href="landing/Sunbasket/Sunbasket.html"><img src="images/sunbasket.png" class="img-slides" width="100%"></a>
-            <div class="slidetext">Sunbasket</div>
-        </div>
-        
-        <div class="mySlides fade">
-            <div class="numbertext">5 / 12</div>
-            <a href="landing/Uber/indexru.html"><img src="images/uber.png" class="img-slides" width="100%"></a>
-            <div class="slidetext">Uber</div>
-        </div>
-        
-        <div class="mySlides fade">
-            <div class="numbertext">6 / 12</div>
-            <a href="landing/Nature.co/Nature.Co.html"><img src="images/NatureCo.png" class="img-slides" width="100%"></a>
-            <div class="slidetext">Nature.Co</div>
-        </div>
-        
-        <div class="mySlides fade">
-            <div class="numbertext">7 / 12</div>
-            <a href="landing/Inbound emotion/Inbound Emotion.html"><img src="images/IE.png" class="img-slides" width="100%"></a>
-            <div class="slidetext">Inbound Emotion</div>
-        </div>
-        
-        <div class="mySlides fade">
-            <div class="numbertext">8 / 12</div>
-            <a href="landing/Landbot/Landbot.html"><img src="images/Landbot.png" class="img-slides" width="100%"></a>
-            <div class="slidetext">Landbot</div>
-        </div>
-        
-        <div class="mySlides fade">
-            <div class="numbertext">9 / 12</div>
-            <a href="landing/Sundae/Sundae.html"><img src="images/Sundae.png" class="img-slides" width="100%"></a>
-            <div class="slidetext">Sundae</div>
-        </div>
-        
-        <div class="mySlides fade">
-            <div class="numbertext">10 / 12</div>
-            <a href="landing/borderbuddy/borderbuddy.html"><img src="images/borderbuddy.png" class="img-slides" width="100%"></a>
-            <div class="slidetext">borderbuddy</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">11 / 12</div>
-          <a href="landing/Branch/Branch.html"><img src="images/Branch.png" class="img-slides" width="100%"></a>
-          <div class="slidetext">Branch</div>
-        </div>
-       
+            <div id="littleBoxes" style="display: flex; flex-direction: column;">
+                <div class="little-boxes">
+                    <a href="#" id="whiteBox" class="white-box box animation">
+                        <div id="textAnimationWhiteBox" class="white-box-animation animation">
+                            <span>View our showcase.</span>
+                        </div>
+                        <span id="disappearedTextWhiteBox" class="bottom animation">Work</span>
+                    </a>
 
-        <div class="mySlides fade">
-            <div class="numbertext">12 / 12</div>
-            <a href="landing/calm/calm.html"><img src="images/calm.png" class="img-slides" width="100%"></a>
-            <div class="slidetext">calm</div>
-        </div>
-        
+                    <a href="#" id="blackBox" class="box black-box animation">
+                        <div id="textAnimationBlackBox" class="black-box-animation animation">
+                            <span>Learn more about us.</span>
+                        </div>
+                        <span id="disappearedTextBlackBox" class="bottom animation">About us</span>
+                    </a>
+                </div>
 
-        
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-        
+            <a href="#" id="yellowBox" class="box yellow-box animation">
+                <div id="textAnimationYellowBox" class="yellow-box-animation animation">
+                    <span>Get in touch! Let's talk to business.</span>
+                </div>
+                <span id="disappearedTextYellowBox" class="bottom animation">Contact us</span>
+            </a>
+            </div>
         </div>
-        <br/>
-        <script src="js/slideshow.js"></script>
-    <hr width="30%"/>
+    </div>
+
+</header>
+
+    <div class="main-container" id="whatwedo">
+        <div class="what-we-do">
+            <div style="margin-left: 60px; width: 90%;">
+                <p style="padding-top: 60px; margin-bottom:60px;">WHAT WE DO</p>
+                <p style="font-size: 90px; padding-bottom: 70px; margin-top: 0px; margin-bottom: 5px; line-height: 90px">We provide clients<br/>with stunning <i>Crafty</i> web<br/>solutions, developed<br/>with <i>skill & passion</i>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="flex-box flex" id="first">
+            <div class="left animation" id="firstLeft">
+                <p id="firstsignature" class="signature animation">Craft CMS</p>
+                <p>We are focused on developing, from start to finish, web solutions with Craft CMS, an easy to use content management system where admins can alter or add content to a website.</p>
+            </div>
+            <div class="right animation" id="firstRight">
+                <p id="firstdescription"><b><span class="on-font-huge">We are experts in</span><br/>
+                <span class="font-huge"><a href="https://craftcms.com/"><i>Craft CMS</i></a></b></span></p>
+            </div>
+        </div>
+        <div class="flex-box flex" id="second">
+            <div class="left animation" id="secondLeft">
+                <p id="secondsignature" class="signature animation">FastSupport</p>
+                <p>We aim to be as available and supportive as we can to our clients. Feel free to use the form below or contact us directly with questions or requests.</p>
+            </div>
+            <div class="right animation" id="secondRight">
+                <p id="seconddescription"><b><span class="on-font-huge">We are always</span><br/>
+                <span class="font-huge">happy to help</b></span></p>
+            </div>
+        </div>
+        <div class="flex-box flex" id="third">
+            <div class="left animation" id="thirdLeft">
+                <p id="thirdsignature" class="signature animation">SEO</p>
+                <div class="text-container">
+                    <p>Using our expertise along with handy tools we strive for a high SEO score, ensuring higher visibility on search sites such as Google.</p>
+                </div>
+            </div>
+            <div class="right animation" id="thirdRight">
+                <p id="thirddescription"><b><span class="on-font-huge">With our SEO knowledge</span><br/>
+                <span class="font-huge">you will be seen</b></span></p>
+            </div>
+        </div>
 
 
-    <p id="contacts"><b>Контакты</b></p>
-    <a id="firstlink" onmouseover="perceptibleFirstButton()" onmouseout="simpleFirstButton()" href="https://t.me/k_laz" class="contacts"><span class="inside-link"><b>Telegram</b><span class="arrow">→</span></span></a>
-    <a id="secondlink" onmouseover="perceptibleSecondButton()" onmouseout="simpleSecondButton()" href="https://instagram.com/k__lazz" class="contacts"><span class="inside-link"><b>Instagram</b><span class="arrow">→</span></span></a>
-    <a id="thirdlink" onmouseover="perceptibleThirdButton()" onmouseout="simpleThirdButton()" href="https://github.com/kllaz" class="contacts"><span class="inside-link"><b>Github</b><span class="arrow">→</span></span></a>
-    <script src="js/perceptibleButtons.js"></script>
-    
-    <footer>
-        <p style="padding-top: 20px;">K_Laz© 2022</p>
-    </footer>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
-</html>
+</html> 
