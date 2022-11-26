@@ -116,6 +116,7 @@ div.left{
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     color: rgba(183, 169, 255, 0.786);
+    overflow: hidden;
 }
 div.right{
     background-color: rgba(183, 169, 255, 0.786);
@@ -127,7 +128,11 @@ div.right{
     text-align: center;
     color: rgb(30, 30, 35);
 }
-
+div.text-container{
+    width: 80%;
+    word-wrap: break-word;
+    margin-left: 1%;
+}
 /* a */
 a{
     color: white;
@@ -214,9 +219,9 @@ div.right p{
     transition: 0.3s linear;
 }
 div.left p{
-    margin-left: 60px;
-    width: 600px;
+    margin-left:10%;
     font-size: 25px;
+    width: 80%;
 }
 p.signature{
     font-size: 20px;
@@ -242,6 +247,7 @@ span.bottom{
     font-weight: bold;
     display: flex;
 }
+
 span.arrow{
     margin-left: 555px;
     margin-top: -20px;
@@ -315,11 +321,60 @@ a.yellow-box span.bottom{
       }
 }
 
+/* scrollbar */
 ::-webkit-scrollbar{
     width: 7px;
     background-color: none;
+    height: 7px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: rgb(30, 30, 35);
     border-radius: 35px;
+}
+
+@media screen and (max-width:1100px) {
+    /* div */
+    .flex{
+        display: block !important;
+    }
+    .flex-box{
+        display: flex !important;
+        margin-bottom: 5px;
+    }
+    /* a */
+    .main-box{
+        width: 98.5% !important;
+        display: block !important;
+        margin-bottom: 5px;
+    }
+    .white-box{
+        width: 50% !important;
+    }
+    .black-box{
+        width: 48.5% !important;
+    }
+    .yellow-box{
+        width: 98.8% !important;
+    }
+    .left{
+        height: 350px !important;
+    }
+    .right{
+        height: 350px !important;
+    }
+    /* span */
+    .bottom{
+        margin-top: 70px !important;
+    }
+    .blue{
+        margin-top: 130px !important;
+    }
+    .arrow{
+        margin-top: -17px !important;
+        margin-left: 90% !important;
+    }
+    .box-name{
+        padding-top: 0px !important;
+        display: inline-block;
+    }
 }
