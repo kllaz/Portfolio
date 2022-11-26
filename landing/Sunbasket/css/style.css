@@ -18,7 +18,7 @@ header img{
   position: absolute;
 }
 /* a */
-a{
+header a{
   text-decoration: none;
   color: black;
   font-size: 2em;
@@ -36,6 +36,35 @@ a{
 /* div */
 div.links{
     margin-right: 5%;
+}
+div.aside{
+  visibility: hidden;
+  opacity: 0;
+  margin-left: -100%;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+  width: 0px;
+  margin: -58px;
+  background-color: white;
+  height: 100%;
+  z-index: 2 !important;
+  position: absolute;
+}
+div.aside-content{
+  margin-left: 70px;
+  text-decoration: none !important;
+  color: black;
+  font-size: 40px;
+}
+div.aside-content a{
+  text-decoration: none;
+  color: black;
+}
+/*hr */
+div.aside hr{
+  margin-left: -70px;
 }
 /* p */
 p{
@@ -58,10 +87,79 @@ input.button{
   margin-bottom: 0px;
 }
 input.button:hover{
-    background-color: rgb(211, 211, 1);
+  background-color: rgb(211, 211, 1);
 }
 input.button:active{
-    background-color: rgb(189, 189, 0);
-    border-top: 2px solid rgb(54, 54, 54);
-    border-left: 2px solid rgb(54, 54, 54);
+  background-color: rgb(189, 189, 0);
+  border-top: 2px solid rgb(54, 54, 54);
+  border-left: 2px solid rgb(54, 54, 54);
+}
+input.close{
+  float: right;
+  margin-right: 10px;
+  width: 30px !important;
+  height: max-content;
+  border: none;
+  text-decoration: none;
+  border-radius: 0px;
+  background: url(images/cross.png);
+  outline:none;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+/* media */
+@media screen and (min-width: 1000px) {
+  input.open{
+    width: 0px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 1000px) {
+  div.links a{
+    visibility: hidden !important;
+    opacity: 0;
+    width: 0px;
+    margin: 0px;
+  }
+  input{
+    width: 70% !important;
+  }
+  header img{
+    float: right !important;
+    position:relative;
+    width: 240px;
+    margin-top: 5px;
+    z-index: 1;
+  }
+  input.open{
+    background: url(images/lines.png);
+    width: 50px !important;
+    height: 50px;
+    border-radius: 0px;
+    margin-top: -2px;
+    margin-left: 4%;
+    font-size: 15px;
+    border: none;
+
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  input.open:hover {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  div.aside{
+  width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  div.aside{
+    width: 150%;
+  }
 }
