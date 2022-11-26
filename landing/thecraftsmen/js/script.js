@@ -3,31 +3,55 @@ document.getElementById('whiteBox').onmouseover = function() {
     document.getElementById('blackBox').style.height = '230px';
     document.getElementById('disappearedTextWhiteBox').style.opacity = '0';
     document.getElementById('textAnimationWhiteBox').style.opacity = '1';
+    document.getElementById('rectangle').style.width = '100px';
+    document.getElementById('rectangle').style.opacity = '1';
+    document.getElementById('triangle').style.width = '50px';
+    document.getElementById('circle').style.width = '40px';
 }
 document.getElementById('whiteBox').onmouseout = function() {
     document.getElementById('blackBox').style.height = '250px';
     document.getElementById('disappearedTextWhiteBox').style.opacity = '1';
     document.getElementById('textAnimationWhiteBox').style.opacity = '0';
+    document.getElementById('rectangle').style.width = '70px';
+    document.getElementById('rectangle').style.opacity = '0.6';
+    document.getElementById('triangle').style.width = '80px';
+    document.getElementById('circle').style.width = '70px';
 }
 /* black box */
 document.getElementById('blackBox').onmouseover = function() {
     document.getElementById('whiteBox').style.height = '230px';
     document.getElementById('disappearedTextBlackBox').style.opacity = '0';
     document.getElementById('textAnimationBlackBox').style.opacity = '1';
+    document.getElementById('circle').style.width = '100px';
+    document.getElementById('circle').style.opacity = '1';
+    document.getElementById('triangle').style.width = '50px';
+    document.getElementById('rectangle').style.width = '40px';
 }
 document.getElementById('blackBox').onmouseout = function() {
     document.getElementById('whiteBox').style.height = '250px';
     document.getElementById('disappearedTextBlackBox').style.opacity = '1';
     document.getElementById('textAnimationBlackBox').style.opacity = '0';
+    document.getElementById('circle').style.width = '70px';
+    document.getElementById('circle').style.opacity = '0.6';
+    document.getElementById('triangle').style.width = '80px';
+    document.getElementById('rectangle').style.width = '70px';
 }
 /* yellow box */
 document.getElementById('yellowBox').onmouseover = function() {
     document.getElementById('disappearedTextYellowBox').style.opacity = '0';
     document.getElementById('textAnimationYellowBox').style.opacity = '1';
+    document.getElementById('triangle').style.opacity = '1';
+    document.getElementById('triangle').style.width = '110px';
+    document.getElementById('rectangle').style.width = '40px';
+    document.getElementById('circle').style.width = '40px';
 }
 document.getElementById('yellowBox').onmouseout = function() {
     document.getElementById('disappearedTextYellowBox').style.opacity = '1';
     document.getElementById('textAnimationYellowBox').style.opacity = '0';
+    document.getElementById('triangle').style.opacity = '0.6';
+    document.getElementById('triangle').style.width = '80px';
+    document.getElementById('rectangle').style.width = '70px';
+    document.getElementById('circle').style.width = '70px';
 }
 
 /* text-animation */
@@ -96,6 +120,33 @@ document.getElementById('third').onmouseout = function() {
     document.getElementById('thirdRight').style.height = '300px';
     document.getElementById('thirdRight').style.width = '50%';
     document.getElementById('thirdLeft').style.marginLeft = '0%';
-    document.getElementById('thirddescription').style.marginTop = '90px'
-    document.getElementById('thirdsignature').style.marginTop = '60px'
+    document.getElementById('thirddescription').style.marginTop = '90px';
+    document.getElementById('thirdsignature').style.marginTop = '60px';
+}
+
+/* figures animation */
+document.getElementById('mainBox').onmouseover = function() {
+    document.getElementById('rectangle').style.opacity = '1';
+    document.getElementById('triangle').style.opacity = '1';
+    document.getElementById('circle').style.opacity = '1';
+    document.getElementById('rectangle').style.width = '90px';
+    document.getElementById('triangle').style.width = '90px';
+    document.getElementById('circle').style.width = '90px';
+    document.getElementById('animation-text').style.opacity = '0';
+
+    document.getElementById('rotation').style.marginLeft = '13%';
+    document.getElementById('rotation').style.marginTop = '7.5%';
+}
+
+document.getElementById('mainBox').onmouseout = function() {
+    document.getElementById('rectangle').style.opacity = '0.6';
+    document.getElementById('triangle').style.opacity = '0.6';
+    document.getElementById('circle').style.opacity = '0.6';
+    document.getElementById('rectangle').style.width = '70px';
+    document.getElementById('triangle').style.width = '80px';
+    document.getElementById('circle').style.width = '70px';
+    document.getElementById('animation-text').style.opacity = '1';
+
+    document.getElementById('rotation').style.marginLeft = '14%';
+    document.getElementById('rotation').style.marginTop = '8.5%';
 }
