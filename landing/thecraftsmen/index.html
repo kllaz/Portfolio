@@ -13,8 +13,21 @@
         <div class="flex">
             <a href="#whatwedo" id="mainBox" class="box main-box animation">
                 <span class="box-name">Craft CMS</span>
-                <div style="margin-top: 60px; width: 2000px;" id="mainBoxTextAnimation" class="box-animation">
-                    <span class="animation-text">We are specialized in Craft CMS.</span>
+                <div class="rotation" id="rotation">
+                    <div class="rec-rot">
+                    <img src="images/rectangle.png" class="figure" id="rectangle"/>
+                    </div>
+
+                    <div class="tr-rot">
+                    <img src="images/triangle.png" class="figure" id="triangle"/>
+                    </div>
+                    
+                    <div class="cir-rot">
+                    <img src="images/circle.png" class="figure" id="circle"/>
+                    </div>
+                </div>
+                <div style="margin-top: 60px; width: 2000px; z-index: 7;" id="mainBoxTextAnimation" class="box-animation">
+                    <span class="animation-text" id="animation-text">We are specialized in Craft CMS.</span>
                 </div>
                 <span class="bottom blue">See our services</span>
                 <span class="bottom blue arrow">↓</span>
@@ -52,7 +65,7 @@
     <div class="main-container" id="whatwedo">
         <div class="what-we-do">
             <div style="margin-left: 5%; width: 90%;">
-                <p style="padding-top: 60px; margin-bottom:60px;">WHAT WE DO</p>
+                <p style="padding-top: 60px; margin-bottom:60px; margin-top: 0px;">WHAT WE DO</p>
                 <p style="font-size: 90px; padding-bottom: 70px; margin-top: 0px; margin-bottom: 5px; line-height: 90px" class="description-of-doing">We provide clients<br/>with stunning <i>Crafty</i> web<br/>solutions, developed<br/>with <i>skill & passion</i>.</p>
             </div>
         </div>
