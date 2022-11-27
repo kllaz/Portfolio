@@ -134,8 +134,8 @@ document.getElementById('mainBox').onmouseover = function() {
     document.getElementById('circle').style.width = '90px';
     document.getElementById('animation-text').style.opacity = '0';
 
-    document.getElementById('rotation').style.marginLeft = '13%';
-    document.getElementById('rotation').style.marginTop = '7.5%';
+    document.getElementById('rotation').style.marginLeft = '31%';
+    document.getElementById('rotation').style.marginTop = '7%';
 }
 
 document.getElementById('mainBox').onmouseout = function() {
@@ -147,6 +147,6 @@ document.getElementById('mainBox').onmouseout = function() {
     document.getElementById('circle').style.width = '70px';
     document.getElementById('animation-text').style.opacity = '1';
 
-    document.getElementById('rotation').style.marginLeft = '14%';
-    document.getElementById('rotation').style.marginTop = '8.5%';
+    document.getElementById('rotation').style.marginLeft = '32%';
+    document.getElementById('rotation').style.marginTop = '8%';
 }
