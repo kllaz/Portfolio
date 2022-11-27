@@ -479,8 +479,8 @@ div.rec-rot, .tr-rot, .cir-rot{
         height: 460px !important;
     }
     div.rotation{
-        margin-top: 4% !important;
-        margin-left: 30% !important;
+        margin-top: 10% !important;
+        margin-left: 25% !important;
         z-index: 2;
     }
     /* p */
