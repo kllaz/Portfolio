@@ -19,26 +19,27 @@ div.inline-container{
 }
 div.main-container{
     display:flex;
-    flex-direction: row;
+    flex-direction:row;
     width: 100%;
 }
 div.login-container{
     background-color: white;
     color: black;
-    position: absolute;
-    right: 10%;
-    height: max-content;
+    position: sticky;
+    right: 4%;
+    height: 100%;
     width: 700px;
 }
 div.center{
-    margin-left: 35px;
+    margin-left: 5%;
 }
 div.about-car{
     margin-bottom: 30px;
 }
 div.signature{
-    margin-left: 50px;
+    margin-left: 4%;
     margin-top: 50px;
+    width: 60%;
 }
 /* input */
 input#have {
@@ -107,7 +108,8 @@ p.font-huge{
     font-size: 50px;
 }
 p.agreement-bottom{
-    margin-bottom: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
 }
 /* span */
 span.logo{
@@ -116,7 +118,7 @@ span.logo{
 }
 span.action-container{
     position: absolute;
-    right: 80px;
+    right: 10%;
     display: flex;
 }
 /* button */
@@ -188,10 +190,52 @@ form::before{
 }
 /* scrollbar */
 ::-webkit-scrollbar{
-    background-color: black;
+    width: 0px;
+    height: 0px;
 }
 ::-webkit-scrollbar-thumb{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+}
+
+@media screen and (max-width:1050px) {
+    div.main-container{
+        display: block;
+    }
+    div.signature{
+        width: 100%;
+        position: relative;
+        margin-left: 20%;
+        display: block;
+    }
+    div.login-container{
+        width: 100%;
+        display: block;
+        position: relative;
+        right: 0;
+        margin-right: auto;
+    }
+    p.signup{
+        padding-top: 15px;
+    }
+}
+@media screen and (max-width:700px) {
+    input[type="text"]{
+        width: 95%;
+    }
+    div.signature{
+        width: 100%;
+        position: relative;
+        margin-left: 5%;
+        display: block;
+    }
+    form::before{
+        content: none;
+    }
+}
+@media screen and (max-width:500px) {
+    span.logo{
+        visibility: hidden;
+    }
 }
