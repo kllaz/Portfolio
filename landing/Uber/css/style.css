@@ -208,6 +208,7 @@ form::before{
         position: relative;
         margin-left: 20%;
         display: block;
+        word-wrap: break-word;
     }
     div.login-container{
         width: 100%;
@@ -237,5 +238,8 @@ form::before{
 @media screen and (max-width:500px) {
     span.logo{
         visibility: hidden;
+    }
+    p.word-wrap{
+        width: 98%;
     }
 }
