@@ -317,6 +317,8 @@ div.rotation{
 div.rec-rot, .tr-rot, .cir-rot{
     animation: moving 7s infinite linear reverse;
     transform-origin: 100px 100px;
+    top:50%;
+    left:50%;
     z-index: 3;
 }
 /* class "animation" */
@@ -339,6 +341,17 @@ div.rec-rot, .tr-rot, .cir-rot{
       to {
         font-size: 60px;
         margin-left: -160%;
+      }
+}
+@keyframes second-slide{
+    from {
+        font-size: 60px;
+        margin-left: 0%;
+      }
+    
+      to {
+        font-size: 60px;
+        margin-left: -260%;
       }
 }
 @keyframes white-box-slide{
@@ -375,16 +388,7 @@ div.rec-rot, .tr-rot, .cir-rot{
       }
 }
 
-/* scrollbar */
-::-webkit-scrollbar{
-    width: 7px;
-    background-color: none;
-    height: 7px;
-}
-::-webkit-scrollbar-thumb{
-    background-color: rgb(30, 30, 35);
-    border-radius: 35px;
-}
+
 
 /* media screen */
 @media screen and (max-width:1100px) {
@@ -434,7 +438,7 @@ div.rec-rot, .tr-rot, .cir-rot{
         margin-top: 70px !important;
     }
     .blue{
-        margin-top: 130px !important;
+        margin-top: 140px !important;
     }
     .arrow{
         margin-top: -17px !important;
@@ -455,28 +459,10 @@ div.rec-rot, .tr-rot, .cir-rot{
         line-height: 40.5px !important;
     }
     .left{
-        height: 500px !important;
+        height: 100% !important;
     }
     .right{
-        height: 500px !important;
-    }
-    #firstLeft{
-        width: 470px !important;
-    }
-    #firstRight{
-        width: 470px !important;
-    }
-    #secondLeft{
-        height: 430px !important;
-    }
-    #secondRight{
-        height: 430px !important;
-    }
-    #thirdLeft{
-        height: 460px !important;
-    }
-    #thirdRight{
-        height: 460px !important;
+        height: var(--height) !important;
     }
     div.rotation{
         margin-top: 10% !important;
@@ -487,4 +473,22 @@ div.rec-rot, .tr-rot, .cir-rot{
     div.left p{
         font-size: 21px !important;
     }
+    p.signature{
+        margin-top: 40px;
+    }
+    /* span */
+    span.arrow{
+        margin-left: 80% !important;
+    }
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: none;
+    height: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(30, 30, 35);
+    border-radius: 35px;
 }
