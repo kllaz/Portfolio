@@ -150,3 +150,11 @@ document.getElementById('mainBox').onmouseout = function() {
     document.getElementById('rotation').style.marginLeft = '32%';
     document.getElementById('rotation').style.marginTop = '8%';
 }
+
+/* height */
+
+let leftEl = document.querySelector('.left');
+let stylesLeft = window.getComputedStyle(leftEl);
+let height = stylesLeft.height;
+let rightEl = document.querySelector('.right');
+rightEl.style.setProperty('--height', height + 'px');
