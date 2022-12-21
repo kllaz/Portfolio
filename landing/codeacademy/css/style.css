@@ -57,9 +57,8 @@ img.button:hover{
     filter: drop-shadow(-5px 5px 5px gray);
 }
 img.logo{
-    max-width: 13%;
     width: 13%;
-    min-width: 0%;
+    min-width: 13%;
 }
 img.meta{
     width: 5.5vw;
@@ -302,46 +301,68 @@ li.select__item{
 @media screen and (max-width:400px) {
     /* div */
     div.log-in-form{
-        height: 40vw;
+        left: 10vw;
+        margin: 0;
+        width: 80vw;
+        height: 80vw;
+        position: fixed;
     }
     div.sign-in-box{
         max-width: 100% !important;
+        margin-top: 12vw;
     }
     div.center{
         display: block;
-        width: 70%;
+        width: 100%;
         margin-left: 8%;
-    }
-    div.select__head{
-        font-size: 2.2vw !important;
-    }
-    div.select{
-        max-width:max-content !important;
     }
     /* input */
     input#close{
-        width: 3vw !important;
-        height: 3vw;
+        width: 7vw !important;
+        height: 7vw;
+        font-size: 5vw;
+        border-width: 1vw;
         padding: 0;
+        margin-left: 70vw;
     }
     input#log-in{
-        width: 10vw;
+        position: absolute;
+        right: 3vw;
+        height: 10vw;
+        font-size: 5vw;
+        border-width: 1vw;
+        width: 20vw;
+        visibility: visible;
+    }
+    div.log-in-form input#log-in{
+        left: 0;
+        margin-top: 5vw;
     }
     input.text-input{
-        width: 50vw;
-        height: 6vw;
+        width: 80vw;
+        height: 10vw;
         margin-bottom: 2vw;
+    }
+    input.text-login{
+        width: 60vw;
+        height: 7vw;
+        margin-bottom: 5vw;
+    }
+    input[type=checkbox]{
+        width: 5vw;
+        margin-top: -2vw !important;
     }
     /* p */
     p.title{
-        margin-bottom: 0vw !important;
+        font-size: 8vw !important;
+        margin-bottom: 5vw !important;
     }
     p.subscription-text{
         margin-top: 2vw;
-        font-size: 5vw;
+        font-size: 10vw;
     }
     p.signature{
-        font-size: 3vw;
+        font-size: 4vw;
     }
     /* img */
     img.main-image{
@@ -349,23 +370,27 @@ li.select__item{
         visibility: hidden;
     }
     img.button{
-        width: 5vw;
+        width: 7vw;
     }
     img.meta{
-        width: 7.5vw;
+        width: 9.5vw;
+    }
+    img.logo{
+        width:60% !important;
     }
     /* ul li*/
     header ul{
-        margin-top: -1vw;
-        margin-left: 9vw;
-    }
-    header ul li{
-        font-size: 2vw;
-        margin-left: 3vw;
+        visibility: hidden;
     }
     /* span */
     form span{
-        font-size: 4vw;
+        font-size: 8vw;
+    }
+    span.margin-left-login{
+        font-size: 5vw;
+    }
+    span.remember{
+        font-size: 3vw;
     }
     /* form */
     form{
@@ -373,7 +398,8 @@ li.select__item{
     }
     /* button */
     button.sign-up{
-        font-size: 4vw;
-        height: 7vw;
+        margin-top: 4vw;
+        font-size: 7vw;
+        height: 10vw;
     }
 }
