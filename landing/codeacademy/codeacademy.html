@@ -5,62 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>codecademy</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <link rel="stylesheet" href="css/mobilePhones.css" type="text/css">
+    <link rel="stylesheet" href="css/mobilePhones.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" 
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body style="margin: 0px;">
-    <img src="images/logo.png" alt="logo" width="13%"/>
-    <div style="padding-top: 13px; font-weight: bold; font-size: 20px;">
-        <a href="" class="black-colored-link" style="margin-left: 21%;">Catalog</a>
-        <label class="margin-left">
-            <select >
-                <option>Resources ▼</option>
-            </select>
-        </label>
-        <label class="margin-left">
-            <select>
-                <option>Community ▼</option>
-            </select>
-        </label>
-        <label class="margin-left">
-            <select>
-                <option>Pro Pricing ▼</option>
-            </select>
-        </label>
-        <a href="" class="black-colored-link margin-left">For Business</a>
-        <input type="button" id="log-in" class="log-in" value="log in">
+    <header>
+        <img src="images/logo.png" alt="logo" style="position: absolute; margin-top: 0.5vw;" width="13%"/>
+        <ul>
+            <li class="first"><a href="#" class="black-colored-link animated" id="catalog">Catalog</a></li>
+            <li>
+                <div class="select">
+                    <input class="select__input" type="hidden" name="">
+                    <div class="select__head">Choose</div>
+                    <ul class="select__list" style="display: none;">
+                        <li class="select__item">Option 1</li>
+                        <li class="select__item">Option 2</li>
+                        <li class="select__item">Option 3</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="select">
+                    <input class="select__input" type="hidden" name="">
+                    <div class="select__head">Community</div>
+                    <ul class="select__list" style="display: none;">
+                        <li class="select__item">Option 1</li>
+                        <li class="select__item">Option 2</li>
+                        <li class="select__item">Option 3</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="select">
+                    <input class="select__input" type="hidden" name="">
+                    <div class="select__head">Pro Pricing</div>
+                    <ul class="select__list" style="display: none;">
+                        <li class="select__item">Option 1</li>
+                        <li class="select__item">Option 2</li>
+                        <li class="select__item">Option 3</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="business" class="animated"><a href="#" id="forBusiness" class="black-colored-link margin-left animated">For Business</a></li>
+            <li><input type="button" id="log-in" class="log-in" value="log in"></li>
+        </ul>
+    </header>
 
-    </div>
     <div class="log-in-form" id="log-in-form">
-        <input type="button" id="close" value="×"><br/>
-        <p style="margin: 0px; font-size:40px; margin-left: 30px; margin-top: auto;"><b>Log In</b></p>
-        <p class="margin-left-login">Email</p>
+        <input type="button" id="close" value="×">
+        <p class="title"><b>Log In</b></p>
+        <span class="margin-left-login">Email</span><br/>
         <input class="margin-left-login text-login" type="email" name="Username" id="username" />
-        <p class="margin-left-login">Password</p>
+        <span class="margin-left-login">Password</span><br/>
         <input class="margin-left-login text-login" type="password" name="Password" id="password" /><br/>
         <input type="checkbox" class="margin-left-login" /><span>Remember me</span><br/>
         <input type="button" id="log-in" class="margin-left-login submit" value="log in">
     </div>
-    <script src="js/logInForm.js"></script>
-    
-    <img src="images/introduce.png" alt="introduce" width="38%" id="introduce" onmouseover="moveImage()" onmouseout="moveImageBack()" class="main-image" />
-    <script src="js/moveImage.js"></script>
-    <div style="float: right; margin-right: 150px; margin-top:90px; position: relative;">
-        <p style="font-size: 40px; margin-top: 0px; margin-bottom: 20px;"><b>Join the millions learning to code<br/>with Codecademy for free</b></p>
-            <form action="#">
-                <p>Email</p>
-                <input class="text-input" type="email" name="email" required="required" />
-                <p>Password</p>
-                <input class="text-input second" type="password" name="password" required="required" /><br/>
-                <input class="sign-up" type="submit" value="Sign Up" />
+
+    <div class="flex-box">
+        <img src="images/introduce.png" alt="introduce" id="introduce" onmouseover="moveImage()" onmouseout="moveImageBack()" class="main-image" />
+
+        <div class="sign-in-box">
+            <p class="subscription-text" id="subscription-text">
+            Join the millions learning to code<br/>with Codecademy for free
+            </p>
+            <form id="subscription" method="post" action="">
+                    <span>Name</span>
+                    <input class="text-input" id="namee" type="name" name="name"/>
+                    <span>Email</span>
+                    <input class="text-input" type="email" name="email"/>
+                    <span>Password</span>
+                    <input class="text-input second" type="password" name="password"/>
+                
+                <button class="sign-up" type="submit">Sign Up</button>
             </form>
-        <p style="margin-top: 40px;">Buy signing up for Codecadmy, you agree to Codecademy's<br/><a href="#">Terms of Service</a> & <a href="">Privacy Policy</a></p>
-        <p style="margin-top: 20px;"><b>Or sign up using:</b></p>
-        <div>
-            <a style="margin-left: -45px;" href="github.com"><img src="images/github.png" class="button" alt="github" width="40px"></a>
-            <a style="margin-left: 70px;" href="google.com"><img src="images/google.png" class="button" alt="google" width="40px"></a>
-            <a style="margin-left: 70px;" href="meta.com"><img src="images/meta.png" class="button" alt="meta" width="75px"></a>
-            <a style="margin-left: 105px;" href="instagram.com"><img src="images/inst.png" class="button" alt="instagram" width="40px"></a>
+            <p style="margin-top: 1vw; font-size: 1vw;">Buy signing up for Codecadmy, you agree to Codecademy's<br/><a href="#">Terms of Service</a> & <a href="">Privacy Policy</a></p>
+            <p style="margin-top: 1vw; font-size: 1vw;"><b>Or sign up using:</b></p>
+            <div class="flex-box" style="margin-top: -0.8vw; font-size: 1vw; margin-left: -0.4vw;">
+                <a style="margin-right: 2.5vw;" href="https://github.com/kllaz"><img src="images/github.png" class="button" alt="github"></a>
+                <a style="margin-right: 2.5vw;" href="google.com"><img src="images/google.png" class="button" alt="google" ></a>
+                <a style="margin-right: 2.5vw;" href="meta.com"><img src="images/meta.png" class="button" alt="meta" style="width: 5.5vw;"></a>
+                <a style="margin-right: 2.5vw;" href="https://instagram.com/k__lazz"><img src="images/inst.png" class="button" alt="instagram" ></a>
+            </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
