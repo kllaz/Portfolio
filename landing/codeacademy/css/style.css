@@ -61,6 +61,9 @@ img.logo{
     width: 13%;
     min-width: 0%;
 }
+img.meta{
+    width: 5.5vw;
+}
 /* .margrin-left */
 .margin-left{
     margin-left: 1%;
@@ -156,7 +159,6 @@ div.log-in-form{
     -moz-transition: 0.3s linear;
     -o-transition: 0.3s linear;
     transition: 0.3s linear;
-    z-index: 2;
 }
 div.sign-in-box{
     margin-right: 10vw; 
@@ -164,6 +166,11 @@ div.sign-in-box{
 }
 div.flex-box{
     display: flex;
+}
+div.links-box{
+    margin-top: -0.8vw; 
+    font-size: 1vw; 
+    margin-left: -0.4vw;
 }
 /* p */
 div.log-in-form p{
@@ -179,6 +186,10 @@ p.subscription-text{
 p.title{
     margin: 2vw 0 2vw 2vw; 
     font-size: 2.6vw !important;
+}
+p.signature{
+    margin-top: 1vw; 
+    font-size: 1vw;
 }
 /* ul, li*/
 ul li{
@@ -293,6 +304,20 @@ li.select__item{
     div.log-in-form{
         height: 40vw;
     }
+    div.sign-in-box{
+        max-width: 100% !important;
+    }
+    div.center{
+        display: block;
+        width: 70%;
+        margin-left: 8%;
+    }
+    div.select__head{
+        font-size: 2.2vw !important;
+    }
+    div.select{
+        max-width:max-content !important;
+    }
     /* input */
     input#close{
         width: 3vw !important;
@@ -302,8 +327,53 @@ li.select__item{
     input#log-in{
         width: 10vw;
     }
+    input.text-input{
+        width: 50vw;
+        height: 6vw;
+        margin-bottom: 2vw;
+    }
     /* p */
     p.title{
         margin-bottom: 0vw !important;
+    }
+    p.subscription-text{
+        margin-top: 2vw;
+        font-size: 5vw;
+    }
+    p.signature{
+        font-size: 3vw;
+    }
+    /* img */
+    img.main-image{
+        position: absolute;
+        visibility: hidden;
+    }
+    img.button{
+        width: 5vw;
+    }
+    img.meta{
+        width: 7.5vw;
+    }
+    /* ul li*/
+    header ul{
+        margin-top: -1vw;
+        margin-left: 9vw;
+    }
+    header ul li{
+        font-size: 2vw;
+        margin-left: 3vw;
+    }
+    /* span */
+    form span{
+        font-size: 4vw;
+    }
+    /* form */
+    form{
+        width: 50vw;
+    }
+    /* button */
+    button.sign-up{
+        font-size: 4vw;
+        height: 7vw;
     }
 }
