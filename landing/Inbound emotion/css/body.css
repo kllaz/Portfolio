@@ -1,5 +1,5 @@
 *{
-    margin:0px;
+    margin:0;
 }
 body, p, section, aside, img{
     display: block;
@@ -8,70 +8,71 @@ body{
     background-color:bisque;
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
 }
 /* div */
 .head{
     width: 100%;
     background-color: white;
-    font-size: 30px;
+    font-size: 1.9vw;
+}
+.logo{
+    margin-left: 6vw;
 }
 .margin-left{
-    margin-left: 100px;
-}
-.more-margin{
-    margin-left: 120px;
+    margin-left: 7.8vw !important;
 }
 
 .main{
-    margin-left:150px;
-    margin-top: 30px;
-    font-size: 30px;
-    position: absolute;
+    margin-left:10vw;
+    margin-top: 2vw;
+    font-size: 2vw;
+    position: relative;
 }
 .aside{
-    float: right;
     background-color: orange;
-    width: 400px;
-    height:93vh;
-    margin-right: 100px;
+    width: 25vw;
+    margin-left: 10vw;
+    height: max-content;
     color: white;
 }
 .text-aside{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
-    margin-left: 30px;
+    margin-top: 4vw;
+    margin-left: 2vw;
+}
+.flex-box{
+    display: flex;
 }
 /* p */
-.logo{
-    position: absolute;
-}
 .font-small{
-    font-size: 10px;
-    letter-spacing: 9px;
-    padding-bottom: 5px;
+    font-size: 0.63vw;
+    letter-spacing: 0.6vw;
+    padding-bottom: 0.3vw;
 }
 .main p{
-    margin-top: 60px;
+    margin-top: 3vw;
 }
 .font-smaller{
-    font-size: 24px;
-    margin-bottom: 40px;
+    font-size: 1.2vw;
+    margin-bottom: 2.5vw;
 }
 .main .font-small{
     letter-spacing: normal;
-    margin-top: 0px;
-    font-size: 15px;
+    margin-top: 0;
+    font-size: 1vw;
     color: slategrey;
     line-height: 2em;
 }
 .font-bigger{
-    font-size: 25px;
+    font-size: 1.7vw;
 }
 .form{
-    margin-bottom: 0px;
-    margin-top: 20px;
-    font-size: 23px;
+    margin-bottom: 0;
+    margin-top: 1.5vw;
+    font-size: 1.6vw;
 }
 /* main */
 .color-orange{
@@ -79,40 +80,41 @@ body{
 }
 /* images */
 img{
-    margin-left: 280px;
-    width:43%;
+    margin-left: 18vw;
+    width: 20vw;
 }
 /* input, select, textarea */
 input, select, textarea{
-    border-right: 0px;
-    border-top:0px;
-    border-left:0px;
-    width: 310px;
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+    width: 20vw;
     background-color: orange;
     border-bottom-color: white ;
     color: white;
-    height: 25px;
-    font-size: larger;
+    height: 2vw;
+    font-size: 1.4vw;
 }
 input:active{
-    border-right: 0px;
-    border-top:0px;
-    border-left:0px;
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
 }
 .submit{
-    border: 0px;
-    width: 200px;
-    height: 40px;
+    border: 0;
+    width: 13vw;
+    height: 3vw;
     color: orange;
     background-color: bisque;
-    border-radius: 30px;
-    margin-top: 10px;
-    margin-right: 50px;
+    border-radius: 3vw;
+    margin-top: 1.5vw;
+    margin-right: 3vw;
+    margin-bottom: 2vw;
     float: right;
 }
 /* form */
 form{
-    margin-top: 30px;
+    margin-top: 2vw;
 }
 /* option */
 option{
@@ -122,8 +124,75 @@ option{
 /* textarea */
 textarea{
     resize: none;
-    height: 80px;
+    height: 5.2vw;
 }
 textarea::placeholder{
     color: white; 
+}
+
+/* media */
+@media screen and (max-width: 426px) {
+    /* div */
+    div.flex-box{
+        flex-direction: column;
+    }
+    div.main{
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.aside{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 3vw;
+        height: max-content;
+    }
+    div.text-aside{
+        margin-left: 4vw;
+    }
+    /* p */
+    div.logo p{
+        font-size: 5vw;
+    }
+    p.font-small{
+        font-size: 3.5vw !important;
+    }
+    p.font-bigger{
+        font-size: 6vw !important;
+    }
+    div.main p{
+        font-size: 5vw;
+    }
+    p.font-smaller{
+        font-size: 3vw !important;
+    }
+    p.font-small{
+        font-size: 2vw !important;
+        line-height: 2.5vw !important;
+    }
+    /* span */
+    span.form{
+        font-size: 4vw !important;
+    }
+    /* img */
+    img.book-img{
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* input */
+    input, select, option, textarea{
+        width: 90vw;
+        height: 5vw;
+        font-size: 4vw;
+        margin-bottom: 5vw;
+    }
+    input.submit{
+        width: 40vw;
+        height: 8vw;
+    }
+    /* textarea */
+    textarea{
+        height: 20vw;
+    }
 }
