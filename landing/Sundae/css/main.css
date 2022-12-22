@@ -6,10 +6,16 @@ body{
 }
 /* div */
 .center{
+    width: 75vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+.box{
     text-align: center;
 }
 /* p */
 .important{
+    margin-top: 1vw;
     font-size: 40px;
 }
 .line-height{
@@ -26,7 +32,7 @@ a{
 }
 /* input */
 input{
-    width: 400px;
+    width: 29vw;
     height: 30px;
     text-align: center;
     border-radius: 7px;
@@ -45,8 +51,52 @@ button{
 /* ul, li */
 ul li{
     display: inline;
-    margin-right: 290px;
+    margin-right: 7vw;
 }
 .last{
     margin-right: 0px;
+}
+ul{
+    padding: 0;
+}
+/* img */
+img.house{
+    width: 40vw;
+}
+img.gray-dot{
+    width: 4vw;
+}
+img.logo{
+    width: 10vw;
+    margin-top: 1vw;
+}
+/*scrollbar */
+::-webkit-scrollbar{
+    width: 0.5vw;
+    background-color: none;
+    height: 1vw;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(72, 72, 72);
+}
+/* media */
+@media screen and (max-width: 426px) {
+    /* img */
+    img.house{
+        width: 70vw;
+    }
+    img.gray-dot{
+        width: 10vw;
+    }
+    img.logo{
+        width: 20vw;
+        margin-top: 4vw;
+    }
+    /* p */
+    p.margin-top{
+        margin-top: 0;
+    }
 }
