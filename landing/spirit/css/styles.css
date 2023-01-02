@@ -1,0 +1,451 @@
+body{
+    background-color: black;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.slider-box, div.form, div.main, footer, a, input{
+    color: white;
+}
+/* div */
+div.main{
+    background-color: rgb(71, 71, 71);
+    height: 40vw;
+}
+header > div + div{
+    display: flex;
+    margin-top: 1.4vw;
+}
+div.links-list{
+    margin-left: 9vw;
+}
+div.logo{
+    margin-left: 5vw;
+}
+div.phone-n-button{
+    margin-left: 18vw;
+}
+div.flex{
+    display: flex;
+}
+div.first-block{
+    margin-top: 2.5vw;
+    margin-left: 5vw;
+}
+div.first-block > div{
+    font-size: 0.9vw;
+}
+div.second-block{
+    width: 37vw;
+    margin-left: auto;
+}
+div.second-block > div{
+    margin-top: 5vw;
+}
+div.link-column{
+    margin-top: 10vw;
+    float: right;
+    margin-right: 11.5vw;
+}
+div.form{
+    margin-top: 2vw;
+    width: 98vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 2px solid white;
+}
+form > div.flex{
+    margin-bottom: 4vw;
+}
+/* p */
+div.first-block > p{
+    font-size: 1.7vw;
+    margin-top: 1vw;
+    letter-spacing: 0.2vw;
+}
+p.prom{
+    color: rgb(255, 102, 0);
+}
+p.name{
+    font-size: 2.5vw;
+    margin-top: 0.5vw !important;
+    margin-bottom: 0.5vw !important;
+}
+div.second-block > div p{
+    margin: 0;
+}
+form > div{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+form > div > div{
+    margin-top: 7vw;
+}
+form > div > div > div{
+    margin-top: 1vw;
+}
+/* a */
+a{
+    text-decoration: none;
+}
+div.links-list a{
+    margin-left: 2vw;
+    font-size: 0.9vw;
+}
+:where(div.phone-n-button > a.button, input.button):hover{
+    border-color: rgb(255, 51, 0);
+}
+div.phone-n-button > a.button:hover{
+    font-size: 1.2vw;
+    padding: 1vw 2vw 1vw 2vw;
+}
+a.underline{
+    text-decoration: underline;
+}
+p.subtitle a{
+    color: rgb(255, 102, 0);
+}
+
+div.link-column a{
+filter: drop-shadow(0 0 3px black);
+}
+a.button#first{
+    opacity: 0.5;
+}
+.button#second{
+    opacity: 1;
+}
+div.link-column a:hover{
+    box-shadow:0 0 3px rgb(54, 54, 54);
+}
+.button#first:hover{
+    opacity: 1;
+}
+label a{
+    text-decoration: underline;
+}
+/* span */
+span.phone::before{
+    content: '';
+    position: absolute;
+    background-image: url('../images/phone.png');
+    background-size: cover;
+    width: 2vw;
+    height: 2vw;
+    left: -4vw;
+    top: -0.5vw;
+}
+span.phone{
+    position: relative;
+}
+span.verticaline{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+p.quote{
+    margin: 0;
+    width: 80%;
+    font-size: 1.5vw;
+    word-wrap: break-word;
+    text-align: center;
+    margin-left: 2vw;
+}
+p.marginTop{
+    margin-top: 1vw;
+}
+div.slider-box > header > p{
+    font-size: 2.5vw;
+    font-weight: bold;
+    letter-spacing: 0.3vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    margin-left: 5vw;
+}
+div.form > p{
+    letter-spacing: 0.2vw;
+    font-size: 3vw;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* form */
+form{
+    width: 100%;
+}
+/* input */
+div.input-list input{
+    width: 25%;
+}
+input{
+    outline: none; 
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid white;
+    font-size: 1.5vw;
+}
+input:where([type = "tel"], [type = "email"]){
+    margin-left: 10%;
+}
+input[type = "radio"]{
+    border: 3px solid white;
+    background-color: gray;
+    width: 1vw;
+    height: 1vw;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input[type = "radio"]:checked{
+    background-color: orange;
+}
+input[type = "submit"]{
+    margin-top: 2vw;
+    margin-left: 10vw;
+}
+input[type = "submit"]:hover{
+    cursor: pointer;
+}
+/* label */
+label{
+    margin-left: 2vw;
+}
+/* header */
+div.main > header{
+    background-color: rgba(0,0,0, 0.5);
+    display: flex;
+    height: max-content;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+/* footer */
+footer{
+    height: 5vw;
+
+}
+/* img */
+div.logo img{
+    height: 4vw;
+}
+
+
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+/* Слайд
+.slick-slide{}
+   Слайд активный
+.slick-slide.slick-active{}
+   Слайд основной
+.slick-slide.slick-current{}
+   Слайд по центру
+.slick-slide.slick-center{
+
+}
+
+   Стрелка
+.slick-arrow{}
+   Стрелка влево
+.slick-arrow.slick-prev{
+}
+   Стрелка вправо
+.slick-arrow.slick-next{}
+   Стрелка не активная
+.slick-arrow.slick-disabled{}
+
+   Точки
+.slick-dots{}
+.slick-dots li{}
+.slick-dots button{}
+
+   Конкретный слайдер */
+.slider {
+	position: relative;
+	padding: 0px 60px;
+}
+
+@media (max-width:767px){
+	.slider {
+		padding: 0px 40px;
+	}
+}
+
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+.slider .slick-arrow.slick-prev{
+	left: 0;
+	background: url('../images/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+	right: 0;
+	background: url('../images/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+.slider__item {
+	padding: 0px 15px;
+    position: relative;
+}
+.slider__item img{
+	max-width: 100%;
+}
+
+/* media */
+@media screen and (max-width:426px) {
+    div.logo img{
+        height: 12vw;
+        margin-top: 3vw;
+    }
+    /* div */
+    div.links-list{
+        visibility: hidden;
+        position: absolute;
+    }
+    div.phone-n-button{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    div.main{
+        height: 100vw;
+    }
+    div.main div.flex{
+        flex-direction: column;
+    }
+    div.second-block{
+        margin-left: 5vw;
+        width: 90%;
+    }
+    div.first-block > div{
+        font-size: 2vw;
+    }
+    div.link-column{
+        float: left;
+        margin-left: 5vw;
+        margin-top: 6vw;
+    }
+    a#first.button{
+        margin-left: 0;
+    }
+    /* p */
+    div.first-block p{
+        font-size: 5vw;
+    }
+    p.name{
+        font-size: 5vw;
+    }
+    p.quote{
+        font-size: 3vw;
+        margin-left: 7vw;
+    }
+    /* a */
+    a.button{
+        margin-top: 0.5vw;
+    }
+    div.phone-n-button > a.button:hover{
+        font-size: 3.5vw;
+    }
+    /* span */
+    span.phone{
+        margin-left: 2vw;
+    }
+    span.phone::before{
+        width: 4vw;
+        height: 4vw;
+    }
+    /* form */
+    div.form{
+        margin-top: 7vw;
+    }
+    /* input */
+    div.input-list input{
+        width: 40%;
+        font-size: 3vw;
+    }
+    input[type="tel"]{
+        margin-left: 25vw;
+        margin-top: 5vw;
+    }
+    input[type = "radio"]{
+        width: 4vw;
+        height: 4vw;
+    }
+    input[type = "submit"]{
+        font-size: 4vw;
+        margin-top: 50%;
+    }
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: black;
+    position: absolute;
+    float: right
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(71, 71, 71);
+    border-radius: 10px;
+}
+
+/* animation */
+.animation{
+    transition: 0.5s ease-in-out ;
+    -o-transition: 0.5s ease-in-out ;
+    -webkit-transition: 0.5s ease-in-out ;
+    -moz-transition: 0.5s ease-in-out ;
+}
+/* button */
+.button{
+    margin-left: 2vw;
+    border: 1px rgb(255, 102, 0) solid;
+    padding: 1.5vw 3vw 1.5vw 3vw;
+
+    transition: 0.5s ease-out ;
+    -o-transition: 0.5s ease-out ;
+    -webkit-transition: 0.5s ease-out ;
+    -moz-transition: 0.5s ease-out ;
+}
