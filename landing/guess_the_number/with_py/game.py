@@ -12,23 +12,20 @@ def submit():
     n = int(request.form['data'])
     if n < 1 or n > 999:
         return render_template_string(f'''
-        <head>
-            <link rel="stylesheet" href="../css/styles.css" type="text/css" />
-        </head>
-        <body>
-            <p>Число {n} не соответствует условию. Введите, пожалуйста, заново!</p>
-            <form action="/submit" method="post">
-                <input type="number" name="data">
-                <button type="submit">Submit</button>
-            </form>
-        </body>
+        <h1 style="text-align: center; font-size: 4vw;">Число {n} не соответствует условию.</h1>
+        <h3 style="text-align: center; font-size: 2vw;">Введите, пожалуйста, заново!</h3>
+        <form action="/submit" method="post" style="margin-left: auto; margin-right: auto; width: 12vw;">
+            <input type="number" name="data" style="height: 2vw;margin-left: auto; margin-right: auto; display: block ; width = 12vw">
+            <button type="submit" style="margin-top: 2vh; width: 10vw; height: 2vw; font-size: 1vw;margin-left: auto; margin-right: auto; display: block">Подтвердить</button>
+        </form>
                                       ''')
     else:
         return render_template_string(f'''
-        <p>Попробуйте угадать загаданное число!</p>
-        <form action="/guessed_submit" method="post">
-            <input type="text" name="guessed_data">
-            <button type="submit">Submit</button>
+        <h1 style="text-align: center; font-size: 4vw;">Попробуйте угадать загаданное число!</h1>
+        <h3 style="text-align: center; font-size: 2vw;">Число находится в диапазоне от 0 до 999 включительно</h3>
+        <form action="/guessed_submit" method="post" style="margin-left: auto; margin-right: auto; width: 12vw;">
+            <input type="text" name="guessed_data" style="margin-left: auto; margin-right: auto; width: 12vw; height: 2vw; display: block">
+            <button type="submit" style="margin-top: 2vh; width: 10vw; height: 2vw; font-size: 1vw;margin-left: auto; margin-right: auto; display: block">Подтвердить</button>
         </form>
         
                                       ''')
@@ -43,29 +40,29 @@ def guess():
         if guessed_n < right and guessed_n > n:
             right = guessed_n
             return render_template_string(f'''
-            <p>Число левее, чем {guessed_n}, попробуйте снова! ;)
-            <form action="/guessed_submit" method="post">
-                <input type="number" name="guessed_data">
-                <button type="submit">Submit</button>
+            <h1 style="text-align: center; font-size: 4vw;">Загаданное число меньше, чем {guessed_n}.</h1>
+            <h3 style="text-align: center; font-size: 2vw;">Введите число "левее"! ;)</h3>
+            <form action="/guessed_submit" method="post" style="margin-left: auto; margin-right: auto; width: 12vw;">
+                <input type="number" name="guessed_data" style="margin-left: auto; margin-right: auto; width: 12vw; height: 2vw; display: block">
+                <button type="submit" style="margin-top: 2vh; width: 10vw; height: 2vw; font-size: 1vw;margin-left: auto; margin-right: auto; display: block">Подтвердить</button>
             </form>
                                           ''')
         elif guessed_n > left and guessed_n < n:
             left = guessed_n
             return render_template_string(f'''
-            <p>Число праве, чем {guessed_n}, попробуйте снова! ;)
-            <form action="/guessed_submit" method="post">
-                <input type="number" name="guessed_data">
-                <button type="submit">Submit</button>
+            <h1 style="text-align: center; font-size: 4vw;">Загаданное число больше, чем {guessed_n}</h1>
+            <h3 style="text-align: center; font-size: 2vw;">Введите число "правее"! ;)</h3>
+            <form action="/guessed_submit" method="post" style="margin-left: auto; margin-right: auto; width: 12vw;">
+                <input type="number" name="guessed_data" style="margin-left: auto; margin-right: auto; width: 12vw; height: 2vw; display: block">
+                <button type="submit" style="margin-top: 2vh; width: 10vw; height: 2vw; font-size: 1vw;margin-left: auto; margin-right: auto; display: block">Подтвердить</button>
             </form>
                                           ''')
         else:
             return render_template_string(f"Не забывайте, что число между {left} и {right}!")
     else:
         return render_template_string(f'''
-        <p>Поздравляю! Число {guessed_n} угадано <3
-        <form action="/index.html">
-            <button type="submit">Вернуться</button>
-        </form>
+        <h1 style="text-align: center; font-size: 4vw;">Поздравляю, число угадано!</h1>
+        <h3 style="text-align: center; font-size: 2vw;">Если хотите сыграть ещё раз, то запустите <i>index.html</i> снова <3</h3>
                                       ''')
 
 if __name__ == '__main__':
