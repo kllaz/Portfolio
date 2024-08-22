@@ -1,1 +1,45 @@
-/*# sourceMappingURL=styles.css.map */
+html, body {
+  height: 100%;
+  background-color: rgb(219, 219, 219);
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  margin-left: auto;
+  margin-right: auto;
+}
+div h1, div h3 {
+  text-align: center;
+}
+div h1 {
+  font-size: 4vw;
+}
+div h3 {
+  font-size: 2vw;
+}
+div form {
+  width: 12vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+div form input {
+  height: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+div form button {
+  margin-top: 2vh;
+  width: 10vw;
+  height: 2vw;
+  font-size: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+footer {
+  margin-top: auto;
+  font-size: 0.5vw;
+}/*# sourceMappingURL=styles.css.map */
