@@ -1,4 +1,3 @@
-
 let h1 = document.getElementById('titleOne');
 let h3 = document.getElementById('titleTwo');
 document.getElementById('checkForm').addEventListener('submit', function(event){
